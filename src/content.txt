@@ -1,0 +1,49 @@
+Enger Bewza: Product Design
+Defining new and emerging product experiences
+View my work >
+
+
+Robots that deliver your food
+    Serve, the autonomous delivery rover that safely navigates sidewalks today delivering food from restaurants to your door. 
+    2018 - Current
+    View project >
+
+The right size, from your phone
+    Ever buy shoes online to realize they don't fit? Ya, that sucks. Dr. Scholl's 3D and Wiivv are a _step_ in the right direction.
+    2014 - 2018
+    View project >
+
+
+[ Maybe a process section again? ]
+
+
+Other work
+    Branding / WebDesign / Copywriting
+    2016
+    Turnium: How to make complicated tech, understandable to more people.
+    View summary >
+
+    Design
+    2011
+    Nike / Autodesk: The future of product design with 3D printing at TED
+    View summary >
+
+    Branding / WebDesign / Copywriting
+    -or-
+    Design / Dev / Volunteer
+    2015
+    Government and Non-profit tech sucks! A little help goes a long way.
+    View summary >
+
+
+[Photo of Enger]
+Enger Bewza: Bay area product designer
+Hello! And thanks for checking out my work. I'm a product designer who loves getting dirty on the tech side of things. My core is around apps and digital product experience, this includes the UX, user-testing all the way to maintaining designs systems, and that all-too-tricky design to dev handoff. 
+
+I started out making games in 2006 and going to school for 3D animation and believe animation is an important part of a good user-experience.
+
+I'm also into the dev side of things, mainly web such as React apps and python backends. Additionally to this, I've contributed to our products with hardware prototypes (3d printing / laser cutting) and even embedded systems programming in C for our robot to be able to communicate to users thought lights and sounds. This work helps us learn quickly and drive decisions for the dev team, some makes it into final product as is! 
+
+I'm mostly interested in working on the most challenging and undefined products, with people smarter than me.
+
+Resume | Linkedin | Github | Codepen | Behance
