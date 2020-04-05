@@ -127,45 +127,41 @@ Delivery robot
             [ Video of Ai Chechni and serve eyes ]
 
         Communication through sounds
-            Sound design is hard.. we brought in a contractor with experience in sound branding as well as vehicles such as Telsa to help help Serve communicate through sound. We created a list of situations and transactions that we would need sounds for and I worked as a project manager to make sure we were successful in meeting out goals. 
+            Sound design is hard... So, we decided to bring on an external sound designer with experience in the sound branding of vehicles, such as Telsa, to help define Serve's voice. I functioned as the project manager, keeping our goals of pleasant sounds and intuitive interactions top of mind. 
 
-            It was a challenge to try to find Serve's voice, this ended up taking a few months of back and forth to finally get to something we all felt sounded like Serve. 
+            It was a challenge to try to find Serve's voice. This process involved a few months of back and forth to finally get something that really sounded like Serve. 
 
-            We made the decision to never have Serve "speak" with real words, as that would promise some kind of awkward vocal interaction (as detailed in this paper) and instead should make "voice" intonations similar to how R2D2 might communicate.
+            We made the decision to never have Serve "speak" with real words, as that would promise some kind of intelligent vocal interaction (as detailed in this paper). Instead, we made "voice" intonations similar to that of R2D2.
 
             [ Some kind of graphic for sound or the sound layers ]
 
-            Since Serve was an electric vehicle that made no natural noise, I also wanted Serve to communicate it's speed. This is something that most EV's are required to do <link> today, and is important for Safety so that people are aware "something" is approaching behind them, coming around a corner, or increasing / decreasing in speed. 
+            Since Serve was an electric vehicle that made no natural noise, I also wanted to clearly communicate it's speed. This is something that most EV's are required to do <link> today. It's important for safety, so that people are aware "something" is approaching behind them, coming around a corner, or increasing / decreasing in speed. 
 
-            To achieve this, we worked with our sound designer to find the right sound and concept for modulating it, then I wrote a python script that would take Serves speed and modulate a sound sample in real time. This sound modulates it's pitch on speed and volume based on accelerations curves. 
+            To achieve this, we worked to find the right sound for modulation based on speed. Then, I wrote a python script that would express this "running" sound in real time based on Serve's motion. 
 
             [ Video of Serve with running sound ] 
 
         Communication through motion
-            How Serve moves communicates a lot! While watching our older rovers drive, their jitteriness and indecisiveness, even in the slightest, would cause an oncoming pedestrian to walk around our rover in the road. This was embarrassing and was the ultimate failure. 
+            Out of all of Serve's expressive features, movement is by far the most important. While watching our older prototypes drive, the slightest jitteriness and indecisiveness would cause an oncoming pedestrian to avoid the robot by walking into the road. This was not only embarrassing, but also a huge safety concern.
             
-            Serve only having 4 wheals instead of the common 6 wheel configuration as well as being able to steer like a car were two huge steps in the direction of empowering a pedestrian to feel like they can be safe, respected and their space not infringed on. Even though serve was also capable of tank style skid steering, we advised that only real steering be used because as soon as Serve breaks from it's understood motion capabilities, that level of understanding and trust we could have built is destroyed. 
+            We wanted to empower pedestrians to feel like they can safely share the sidewalk with our robot, putting an emphasis on safety, respect, and clear communication. This is why I encouraged the use of 4 wheels instead of 6, car-like steering through the angling of the wheels, and confident movement. 
 
             [ Animated graphic of steering and motion paths ]
 
-            I also chose the most difficult situation to try and solve: A large group of people blocking Serves path. I came up with the initial idea visiting the California Academy of Sciences in the Golden Gate Park one busy weekend; It was extremely busy and I watched a mother pushing her stroller through a large crowd of people, while texting. Never once did she stop the stroller completely, she kept it moving, even slowly, and successfully was able to "cut" through the crowd without eye contact or saying anything. 
-
-            I applied this as a first iteration for how Serve would be able to keep moving. Once Serve stops, no matter how many sounds it makes, people would seem to think it was there for them and trying to instead interact with it. Slight movement and steering allowed Serve to communicate it's intent.
+            I also came up with a strategy that allowed Serve to successfully cut through a static crowd of people, as shown below. I was inspired by observing parents pushing strollers through dense crowds.
 
             [ Graphic of Serve moving through crowd ]
         
-    Transactional design: How to interact with Serve
-        When Serve get's to a restaurant or to the end-user who placed their order, we enter the transactional part of the experience. The end-user has already ordered and payed using the Postmates App, the merchant has already received the order too. And the end-user / merchant are already notified that Serve will be coming, and neither has opted out of this due to a disability or other reasons; We just need the merchant to be able to easily load and secure the food, and the end-user to be able to retrieve their food.
+        Transactional design: How to interact with Serve
+            [ Maybe some graphics on people loading Serve or instagram videos ]
 
-        [ Maybe some graphics on people loading Serve or instagram videos ]
+            All of our customers will end up using the built-in touch screen while interacting with Serve. In development, I put together a screen and lid prototype that would allow me to test with users and iterate on the experience. 
 
-        I created a web-app and Serve lid prototype that would allow me to test with users and iterate on the design. The goals being for people to understand that they need to enter the order number, that the lid is going to open, and that the lid is going to close and lock. I also wanted merchants to be able to close it so they could go grab more items and come back. 
+            [ prototype and webflow ]
 
-        [ prototype and webflow ]
+            I then created the screen app for the final product that, when  combined with sounds and light animations, created an easy-to-understand and low-friction experience that tested well with users. 
 
-        I landed on a strip animation that would show success and created a screen library in JS that's running on the rover today. The animations on the strip and screen give a quick preview of what the lid is going to do so that people get their hands out of the way or remove any items they left on-top. This was combined with sounds from our sound designer that created an easy to understand and low-friction experience that tested well wit users. 
-
-        [ some sizzle on the transactional flow ]
+            [ some sizzle on the transactional flow ]
 
     Food storage in Serve
         Our initial food storage in Serve was a flex-able insolation liner with a grate and cupholders in the bottom. With our more recent design, we had a lot more space to work with. 
