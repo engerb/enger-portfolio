@@ -164,21 +164,21 @@ Delivery robot
             [ some sizzle on the transactional flow ]
 
     Food storage in Serve
-        Our initial food storage in Serve was a flex-able insolation liner with a grate and cupholders in the bottom. With our more recent design, we had a lot more space to work with. 
+        Our initial food storage in Serve was a flexible insolation liner with a grate and cupholders. This design turned out to not be the most effective, so we went back to the drawing board. 
 
         [ side by side drawing of old vs new serve cargo and maybe an current cargo insert ] 
 
         For our latest revision on the cargo, we wanted to satisfy a few things:
             - No moving parts or modularity.
-                Merchants should open Serve and thrown things in as fast as possible, they don't have time to figure out bungie cords and fold-out cupholders.
+                Merchants should open Serve and thrown things in as fast as possible.
             - Easily cleanable
-                The older liner was hard to clean when something spilled, and the last thing you want to see when getting your food is old food debres or smell. 
+                The older liner was hard to clean. 
             - Safely hold different types of food and drinks
-                We didn't want drinks spilling or food moving around too much, but also enough space for things like pizza boxes. 
+                Securing bags, holding drinks, and supporting pizza's were are biggest challenges. 
 
-        I created a few configurations in Blender that we measured with a few many food items, pizza boxes and beverage cups. We gauged the average orders with the vast amount of order data to come up with what we felt was the most optimal configurations. 
+        I created a few configurations in Blender that we measured with a many food items, pizza boxes and beverage cups. We gauged the average orders with the vast amount of order data to come up with what we felt was the most optimal configurations. 
 
-        I then laser cut and 3D printed some fo these configurations for use to test. 
+        I then laser cut and 3D printed some these configurations for us to test. 
 
         [ renders and images of laser cut and 3D prints ]
 
