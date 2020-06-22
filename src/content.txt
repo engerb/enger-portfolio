@@ -17,30 +17,33 @@ Homepage:
 
     A few things I do
         UX / UI design
-        UX and logic flows, such as checkout, shipment tracking and other transactional flows. 
-        Testing and iteration for increasing conversions.
-        Creating web and native app comps and documentation for dev handoff. 
-        Creating and maintaining design systems. 
+        // UX and logic flows, such as checkout, shipment tracking and other transactional flows. 
+        // Testing and iteration for increasing conversions.
+        // Creating web and native app comps and documentation for dev handoff. 
+        // Creating and maintaining design systems. 
+        From logic flows, prototypes to UI design, design-systems and dev handoffs. 
 
         Physical product and CMF
-        Prototypes using laser cutting and 3D printing, such as our rovers food storage.
-        CMF including concepts, renders and final manufacturability. 
-        Product packaging and out-of-box experience. 
+        // Prototypes using laser cutting and 3D printing, such as our rovers food storage.
+        // CMF including concepts, renders and final manufacturability. 
+        // Product packaging and out-of-box experience. 
+        Laser cut and 3D printed prototypes all the way to finished product along with packaging.  
 
         Dev work
-        Web-dev work such as React for this website, the touch screen on our robot and Web-GL too. 
-        Servers and signal processing in python, currently learning Tensor-flow.
-        C / C++ on embedded systems as well as CUDA. 
-        All helpful in building prototypes, some even work their way into our end products. 
+        // Web-dev work such as React for this website, the touch screen on our robot and Web-GL too. 
+        // Servers and signal processing in python, currently learning Tensor-flow.
+        // C / C++ on embedded systems as well as CUDA. 
+        // All helpful in building prototypes, some even work their way into our end products. 
+        Web-dev, real prototypes, and even C code for embedded systems. 
 
 
     Footer:
         [Photo of Enger]
         Hello! Thanks for checking out my work! 
 
-        I started out learning 3D modeling in 2005, making games and websites then. I wanted to get into the film or game industry so I went to school for 3D design in 2011, but ended up getting drawn down the path of product design. I'm always honing my craft, keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people need is the most exciting part.
+        I started learning 3D modeling back in 2005. I also built games and websites in my free time. I went to school for 3D Design in 2011 and was eventually  drawn into  product design. I enjoy keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people want is the most exciting part.
 
-        I'm passionate in working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product. 
+        I'm passionate about working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product. 
 
         Resume | Linkedin | Github | Codepen | Behance
 
@@ -55,7 +58,7 @@ Delivery robot:
         Product designer
         2018 - Current
 
-        My contributions
+        My contributions // better word, Design lead
         Sidewalk UI, Piloting UI, Hardware and CMF
 
         Tools used 
@@ -66,7 +69,7 @@ Delivery robot:
     
 
     Delivery robots?
-        in 2018, our design team set out to make delivery robot interactions more intuitive and enjoyable. The landscape at that point was very undefined with robots that ranged from difficult to understand all the way to downright intimidating. 
+        In 2018, our design team set out to make delivery robot interactions more intuitive and enjoyable. The landscape at that point was very undefined with robots ranging from difficult to understand all the way to intimidating. 
 
         Product requirements
              • Friendly and approachable
@@ -83,50 +86,52 @@ Delivery robot:
     
 
     Meet Serve
-        After testing concepts through online surveys and cardboard models, we landed on Serve. Most people intuitively understood where the "front" was, its face, and how to interact with it. Now that we had our product's concept, we started work on detailing and designing all the interactions Serve may have with people.
+        After testing concepts with online surveys and cardboard models, we landed on Serve. Most people intuitively understood where the "front" was, it's face, and how to interact with it. Now that we had our product concept, I started detailing and designing all the interactions Serve may have with people.
 
         [ Concept of Serve ]
 
 
     The "sidewalk UI"
-        Between picking up food at restaurants and dropping off the delivery, 95% of Serve's time is spent on sidewalks. We only get a few seconds between each pedestrian to make that interaction safe, understandable, and enjoyable. My goal was to express the Serves intentions through lights, sounds, and motion.
+        Between picking up food at restaurants and dropping off the delivery, 95% of Serve's time is spent on busy sidewalks with pedestrians. My goal was to express Serve's intentions through lights, sounds, and motion in order to make these interaction safe, understandable, and enjoyable.
+
+        There's on
 
         Light design      
-            For the eyes and strip, I soldered together a hardware prototype created the animations that run on the microcontroller. 
+            For the eyes and strip, I soldered together a hardware prototype and created the animations that run on the microcontroller. 
 
             [ Video and pics of Serve prototype hardware ]
             [ Video of Ai Chechni and serve eyes ]
 
         CSound design
-            Conveying intent through sound can be difficult. I created a python script that converts the rovers speed into a modulated sound so that people would understand something is approaching from behind them, and how fast it is going.
+            Communicating intent through sound can be difficult. I created a python script that conveys the rovers speed into a modulated sound so that people would be made aware of it's speed and positions. 
 
             [ some fun apple that plays sounds? ]
 
         Motion design 
-            I designed motion strategies that use 4 wheels and car like steering that better convey Serve's intent helping Serve navigate difficult situations and build trust with pedestrians.
+            I designed motion strategies that use 4 wheels and car like steering to better communicate Serve's intent to pedestrians.
 
             [ Animated graphic of steering and motion paths ]
         
     Transactional design: How to interact with Serve
-        Most importantly, people need to get their food from Serve. I designed, tested and developed the touchscreen experience, that seamlessly combined with lights, sounds and lid actuation to create a low-friction experience that was well received by users. 
+        Most importantly, people need to get their food from Serve. I designed and developed the touchscreen experience which tested well with users. 
 
         [ some sizzle on the transactional flow, maybe a prototype ]
 
 
-    Piloting UI
     Driving Serve
-        Autonomous vehicles sometimes need help, especially when it's a sidewalk with no lanes. I designed a tele-ops interface that allows our fleet of Serves to be monitored by just a few people. Intervening and driving if necessary.
+    Piloting UI
+        Autonomous vehicles sometimes need help, even more so when navigating a sidewalk with no lanes. I designed a tele-ops interface that allows our fleet of Serves to be monitored by just a couple people. Intervening if necessary.
 
         [ Some comps of pilot-ui ]
 
     Hardware design
         Food storage in Serve
-            I modeled various 3D designs and 3D prints that were tested against different food configurations. The one that tested best was the "2 cupholders and an offset pizza shelf" design. This allowed many order combinations to securely fit during deliveries. 
+            I modeled various designs and 3D prints that were tested against different food configurations. The design that tested best had two cupholders and an offset pizza shelf. This allowed many order combinations to securely fit during deliveries.
 
             [ some cool graphic on prototypes and fitting in different food items ]
 
         CMF - Serve's style
-            To visualize ideas faster, I created a web tool that allowed us quickly explore new designs and if they fit our fun and approachable brand.
+            When people see a Serve, they instantly recognize our brand. I created a web tool that allowed us to quickly explore new designs and whether they fit our brand. 
 
             [ Viewer ]
 
@@ -174,25 +179,83 @@ Customized footwear:
         The measurement app is a native iOS and Android app that allows users to take their measurements, learn about their feet as well as purchase our footwear customized to those measurements. 
 
         What photos to take?
-        A hardware engineer, a bio-mechanics engineer, a computer mission engineer and I conducted a study with 500 people. We brought them into our office, measured their feet, took castings, 3D scans and asked them to take various photos with their phones that we thought would provide enough data to get measurements. 
+        A hardware engineer, a bio-mechanics engineer, a computer vision engineer and I conducted a study with 500 people. We brought each person into our office, measured their feet, took castings, 3D scans, and asked them to take various photos with their phones that we thought would provide enough data to get measurements. 
 
         The only photos that we could rely on and have users easily take were a top photo of each foot, on a blank sheet of paper for scaling, and a side photo to capture their arch and other geometry. 
 
-        2015 measurement experience
-        ...
-        pain points:
+        2015 measurement app experience
+            Because there was not much out there for measurement experiences, I used two existing apps as reference: M-Taylor and Normal. We decided to launch a Kickstarter to pre-order the product and use a quick and dirty app to fulfil these orders and learn as fast as possible. 
 
-        2016 measurement experience
+            Pain points in this experience:
+            - People loved the videos, but it was difficult to keep track of everything covered.
+            - App flow was too linear and not friendly for returning users.
+            - Didn't scale well for more than one product.
 
-        2017 measurement experience
-        Dr. Shcolls...
+        2016 measurement app experience
+            After launching our initial app and shipping products, I was able to learn more about how the app was used and what improvements should be tried. Most of this data came through support emails and various in person observations. 
 
-        ...
+            Non-linear experience:
+            To support more than one product, track orders and manage measurements, I designed the app around a central home area where flows branched off from. 
 
-    Checkout flow
-        blah blah conversions
+            Measurement tutorial slider:
+            A fully voiced video with rich visual effects tested well with users, but there was too much information for a user to remember and any updates to the measurement experience required an entirely new production. I took after the popular onboarding carousel design used in many app intros in the time, but used short snippet videos as-well. This resulted in better sales conversion and far less instances of rejected measurements.
 
-        ...
+        2017 measurement app experience
+            The 2016 app experience was a really good foundation to test and iterate on. A few things that stood out were a huge drop-off of users at account-creation and an measurement experience that could be even better for users. As this was also a partnership with Bayer: Dr. Scholl's, we were able to put a lot more resources into user research as well as frontend-dev. 
+
+            Measurements first:
+            I made a terrible assumption before, that users would hate the measurements and that I should get them as invested into the experience as possible, then spring account creation onto them with the measurements right after (needed an account to save then). The issue was that people didn't really understand the value of the product or the value of creating a user account. Switching to a measurements first experience greatly improved account creation conversion as well as product purchase afterwards by 2X!
+
+            [ measurement flow ]
+
+            Deep-learning driven measurements:
+            Building up such a large dataset of feet, examples of good and bad photos gave us plenty to accurately detect feet and give good guidance in real time on a end user's device. 
+
+            I first started by creating a short list of experiences to test, had them built as quick android prototypes, then user tested these on the street with random people and scheduled studies. 
+
+            [photo of app prototypes]
+
+            Good UI design practices:
+            Throughout the course of web and app designs I created and how they turned out, I learned just how difficult UI design is and the even harder part of communicating to front-end devs. 
+            
+            The best way I found to communicate user flows was to simply use something like Balsamiq or Overflow. Using click through prototypes was difficult to follow all the branching paths and resulted in more dev errors. 
+
+            For sizing and scale, I would create components and show how they would scale as well as break to different layouts at different sizes. 
+
+        Awards:
+            In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live app demo (never advised!) and we ended up taking home two awards: "Best UX Overall" and "Best UX for Product".
+
+    Website:
+        At first our website was just informative, but turned into an important part of our buying experience. As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product. 
+
+        A few other brands that I was inspired by were Casper, Allbirds, Harries shaving for their online first brands and how well they communicated their offerings.
+
+        [mood bored]
+
+        Find your product
+        Because the products have unique catagories such as gendered saddles but unisex insoles of various lengths, a floating pop-out nav bar made it easier to see our products without having to go a single page in. 
+
+        Checkout flow
+        The checkout-flow was a typical "cart, shipping, payment", but I wanted to make it as visually pleasing and clear as possible with options to sign in, re-use shipping address, enter promos. 
+
+
+    Product:
+        Custom insoles:
+        The insole was created using a mix of 3D printing of other processes combined. The users photos are broken down into measurements that are used to create a 3D printed nylon-12 shell, a custom poly-urethane foam with a micro-wicking fabric is laminated to the top of this shell, and the shell and top pattern are customized to the users measurements. 
+
+        The esthetics were designed by me in Blender as well as software to automate creating 3D printable designs from the users measurements. 
+
+        I created many iterations on this product for us to run testing through local Canadian athletes, government sponsored studies with BCIT, and through small partnerships with local practitioners. 
+
+        Sandal:
+        The sandal is offered in feminine and masculine styling / sizing. The size is chosen from user measurements and the strap / 3d printed arch insert is also created custom to these. 
+
+        My main contribution to the sandal product is how the custom arch integrates with the injection molded parts. I wanted to not break the flow of the design and landed on an inner bevel design.
+
+        Packaging:
+        Like with other cool trendy products that primarily sell online and through app, we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape. We added a pamphlet that gave them some tips on using their product and each one would be signed by the person putting it all into the box. 
+
+
 
 
 
