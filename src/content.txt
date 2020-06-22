@@ -161,7 +161,7 @@ Customized footwear:
 
 
     Ever buy shoes online?
-        It's scary stuff! Even the same size and fit varies between models in the same brand! In 2014, I joined up with the founders in a tiny Vancouver subleased office to tackle this very problem. Smartphones were getting more powerful by the year and our aim was to use computer vision to allow a user to measure their feet in their home and shop online with confidence. 
+        It's scary stuff! Even the same size and fit varies between models in the same brand! In 2014, I joined up with our founders in a tiny Vancouver to tackle this very problem. Smartphones were getting more powerful by the year and our aim was to use computer vision to allow a user to measure their feet in their home and shop online with confidence. 
 
         We started by building this tech around our own insole product and other footwear, which was made custom with the help of 3D printing. Our main target would be early tech adopters, urban athletes and people between 30 to 60 years who work in professions that require them to stand on their feet seeking comfort — such as teachers or nurses.
 
@@ -171,11 +171,8 @@ Customized footwear:
              • Accurate results
              • Provide comfort
 
-        Challenges
-            ...
 
-
-    Measurement app
+    Measurement app:
         The measurement app is a native iOS and Android app that allows users to take their measurements, learn about their feet as well as purchase our footwear customized to those measurements. 
 
         What photos to take?
@@ -187,7 +184,7 @@ Customized footwear:
             Because there was not much out there for measurement experiences, I used two existing apps as reference: M-Taylor and Normal. We decided to launch a Kickstarter to pre-order the product and use a quick and dirty app to fulfil these orders and learn as fast as possible. 
 
             Pain points in this experience:
-            - People loved the videos, but it was difficult to keep track of everything covered.
+            - People loved the video tutorials, but it was difficult to keep track of everything covered.
             - App flow was too linear and not friendly for returning users.
             - Didn't scale well for more than one product.
 
@@ -198,10 +195,10 @@ Customized footwear:
             To support more than one product, track orders and manage measurements, I designed the app around a central home area where flows branched off from. 
 
             Measurement tutorial slider:
-            A fully voiced video with rich visual effects tested well with users, but there was too much information for a user to remember and any updates to the measurement experience required an entirely new production. I took after the popular onboarding carousel design used in many app intros in the time, but used short snippet videos as-well. This resulted in better sales conversion and far less instances of rejected measurements.
+            A fully voiced video with rich visual effects tested well with users, but there was too much information for a user to remember and any updates to the measurement experience required an entirely new production. I took after the popular onboarding carousel design used in many app intros in the time, but used short snippet videos as-well. This resulted in far less instances of rejected measurements.
 
         2017 measurement app experience
-            The 2016 app experience was a really good foundation to test and iterate on. A few things that stood out were a huge drop-off of users at account-creation and an measurement experience that could be even better for users. As this was also a partnership with Bayer: Dr. Scholl's, we were able to put a lot more resources into user research as well as frontend-dev. 
+            The 2016 app experience was a really good foundation to test and iterate on. A few things that stood out were a huge drop-off of users at account-creation and a measurement experience that could be even better for users. As this was also a partnership with Bayer: Dr. Scholl's, we were able to put a lot more resources into user research as well as frontend-dev. 
 
             Measurements first:
             I made a terrible assumption before, that users would hate the measurements and that I should get them as invested into the experience as possible, then spring account creation onto them with the measurements right after (needed an account to save then). The issue was that people didn't really understand the value of the product or the value of creating a user account. Switching to a measurements first experience greatly improved account creation conversion as well as product purchase afterwards by 2X!
@@ -222,38 +219,43 @@ Customized footwear:
 
             For sizing and scale, I would create components and show how they would scale as well as break to different layouts at different sizes. 
 
+            (Maybe after effects)
+
         Awards:
-            In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live app demo (never advised!) and we ended up taking home two awards: "Best UX Overall" and "Best UX for Product".
+            In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live app demo (I took the risk of..) and we ended up taking home two awards: "Best UX Overall" and "Best UX for Product".
 
     Website:
-        At first our website was just informative, but turned into an important part of our buying experience. As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product. 
+        At first our website was just informative, but turned into an important part of our buying experience. As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product became more immportant.
 
         A few other brands that I was inspired by were Casper, Allbirds, Harries shaving for their online first brands and how well they communicated their offerings.
 
         [mood bored]
 
         Find your product
-        Because the products have unique catagories such as gendered saddles but unisex insoles of various lengths, a floating pop-out nav bar made it easier to see our products without having to go a single page in. 
+        Because the products have unique catagories such as gendered saddles but unisex insoles of various lengths, a floating pop-out nav bar made it easier to see our products without having to navigate to a single page. 
 
         Checkout flow
-        The checkout-flow was a typical "cart, shipping, payment", but I wanted to make it as visually pleasing and clear as possible with options to sign in, re-use shipping address, enter promos. 
+        The checkout-flow was a typical "cart, shipping, payment", but I wanted to make it as visually pleasing and clear as possible with options to sign in, re-use shipping address, payment, enter promos. 
 
 
-    Product:
+    Hardware Product:
         Custom insoles:
-        The insole was created using a mix of 3D printing of other processes combined. The users photos are broken down into measurements that are used to create a 3D printed nylon-12 shell, a custom poly-urethane foam with a micro-wicking fabric is laminated to the top of this shell, and the shell and top pattern are customized to the users measurements. 
+        The insole was created using a mix of 3D printing and other processes combined. The users photos are broken down into measurements that are used to create a 3D printed nylon-12 shell, a custom poly-urethane foam with a micro-wicking fabric is laminated to the top of this shell, and the shell and top pattern are customized to the users measurements. (make this a 123? caree/of)
 
-        The esthetics were designed by me in Blender as well as software to automate creating 3D printable designs from the users measurements. 
+        The esthetics were designed by me in Blender as well as software I created to generate 3D printable designs from the users measurements. 
 
         I created many iterations on this product for us to run testing through local Canadian athletes, government sponsored studies with BCIT, and through small partnerships with local practitioners. 
 
         Sandal:
         The sandal is offered in feminine and masculine styling / sizing. The size is chosen from user measurements and the strap / 3d printed arch insert is also created custom to these. 
 
-        My main contribution to the sandal product is how the custom arch integrates with the injection molded parts. I wanted to not break the flow of the design and landed on an inner bevel design.
+        My main contribution to the sandal product is how the custom arch integrates with the injection molded parts. I wanted to not break the flow of the design and landed on an inner bevel concept.
 
         Packaging:
-        Like with other cool trendy products that primarily sell online and through app, we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape. We added a pamphlet that gave them some tips on using their product and each one would be signed by the person putting it all into the box. 
+        Like with other cool trendy products that primarily sell online and through apps, we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape. We added a pamphlet that gave the user some tips on using their product and each one would be signed by the person putting it all into the box. 
+
+    Learnings:
+        Although we never did end up becoming the solution to online retail, I still learned so much during mmy time at Wiivv. Being a part of the Wiivv team showed me just how fun it can be to try to create new product experiences that solved untackled prommebls. 
 
 
 
