@@ -1,11 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-
+const webpack = require('webpack')
+const path = require('path');
 
 module.exports = {
     module: {
         rules: [
         {
-            test: /\.s[ac]ss$/i,
+            test: /\.(s[ac]ss|css)$/i,
             use: [
             // Creates `style` nodes from JS strings
             'style-loader',
@@ -16,13 +17,13 @@ module.exports = {
             ],
         },
         {
-            test: /\.(png|svg|jpg|gif)$/,
+            test: /\.(png|svg|jpg|gif|glb|hdr|zip|pdf)$/,
             use: [{
                 loader: 'file-loader'
             }]
         },
         {
-            test: /\.(js|jsx)$/,
+            test: /\.(js|jsx|jsm)$/,
             exclude: /node_modules/,
             use: {
                 loader: "babel-loader"
@@ -42,7 +43,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             hash: true,
             template: './src/index.html',
-            filename: './index.html'
-        })
-   ]
+            filename: './index.html',
+            favicon: './src/assets/img/favicon.svg'
+        }),
+    ]
 };

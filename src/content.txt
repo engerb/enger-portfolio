@@ -154,10 +154,10 @@ Customized footwear:
         2014 - 2018
 
         My contributions
-        Measurement app, checkout flow, hardware product
+        Measurement app, Website, Hardware product
 
         Reading time
-        10 - 15 minutes
+        15 - 20 minutes
 
 
     Ever buy shoes online?
@@ -173,7 +173,7 @@ Customized footwear:
 
 
     Measurement app:
-        The measurement app is a native iOS and Android app that allows users to take their measurements, learn about their feet as well as purchase our footwear customized to those measurements. 
+        A native phone app allowing users to take their measurements, learn about their feet as well as purchase our footwear customized to those measurements. 
 
         What photos to take?
         A hardware engineer, a bio-mechanics engineer, a computer vision engineer and I conducted a study with 500 people. We brought each person into our office, measured their feet, took castings, 3D scans, and asked them to take various photos with their phones that we thought would provide enough data to get measurements. 
@@ -205,7 +205,7 @@ Customized footwear:
 
             [ measurement flow ]
 
-            Deep-learning driven measurements:
+            Deep-learning driven experience:
             Building up such a large dataset of feet, examples of good and bad photos gave us plenty to accurately detect feet and give good guidance in real time on a end user's device. 
 
             I first started by creating a short list of experiences to test, had them built as quick android prototypes, then user tested these on the street with random people and scheduled studies. 
@@ -225,7 +225,7 @@ Customized footwear:
             In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live app demo (I took the risk of..) and we ended up taking home two awards: "Best UX Overall" and "Best UX for Product".
 
     Website:
-        At first our website was just informative, but turned into an important part of our buying experience. As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product became more immportant.
+        At first our website was just informative, but turned into an important part of our buying experience. As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product became more important.
 
         A few other brands that I was inspired by were Casper, Allbirds, Harries shaving for their online first brands and how well they communicated their offerings.
 
@@ -235,12 +235,15 @@ Customized footwear:
         Because the products have unique catagories such as gendered saddles but unisex insoles of various lengths, a floating pop-out nav bar made it easier to see our products without having to navigate to a single page. 
 
         Checkout flow
-        The checkout-flow was a typical "cart, shipping, payment", but I wanted to make it as visually pleasing and clear as possible with options to sign in, re-use shipping address, payment, enter promos. 
+        The checkout-flow was a typical "cart, shipping, payment", but I wanted to make the checkout flow as visually pleasing and clear as possible with options to sign in, re-use shipping address, payment, enter promos. 
 
 
     Hardware Product:
         Custom insoles:
         The insole was created using a mix of 3D printing and other processes combined. The users photos are broken down into measurements that are used to create a 3D printed nylon-12 shell, a custom poly-urethane foam with a micro-wicking fabric is laminated to the top of this shell, and the shell and top pattern are customized to the users measurements. (make this a 123? caree/of)
+        3D printed nylon-12 shell, fitted to the users measurements and optimized for comfort.
+        Custom poly-urethane foam with a micro-wicking fabric laminated to the top of this shell.
+        Shell colour and pattern chosen by user. 
 
         The esthetics were designed by me in Blender as well as software I created to generate 3D printable designs from the users measurements. 
 
@@ -252,10 +255,13 @@ Customized footwear:
         My main contribution to the sandal product is how the custom arch integrates with the injection molded parts. I wanted to not break the flow of the design and landed on an inner bevel concept.
 
         Packaging:
-        Like with other cool trendy products that primarily sell online and through apps, we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape. We added a pamphlet that gave the user some tips on using their product and each one would be signed by the person putting it all into the box. 
+        Like with other cool trendy products that primarily sell online and through apps, we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape. I added a pamphlet that gave the user some tips on using their product and each one would be signed by the person putting it all into the box. 
+        Packaging needed to be sustainable, yet durable and shippable.
+        The concept of a tailored experience was brought into the package such as printing their names and singing each one. 
+        Out-of-box experience needed to be informative with care and how to flyers.
 
     Learnings:
-        Although we never did end up becoming the solution to online retail, I still learned so much during mmy time at Wiivv. Being a part of the Wiivv team showed me just how fun it can be to try to create new product experiences that solved untackled prommebls. 
+        Although we never did end up becoming the solution to online retail measuring, I still learned so much during my time at Wiivv. Being a part of the Wiivv team showed me just how fun it can be to try to create new product experiences that solved untackled problems. 
 
 
 
