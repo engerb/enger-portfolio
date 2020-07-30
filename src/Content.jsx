@@ -4,7 +4,7 @@ const Content = {
     home: [
         {
             component: 'Header',
-            title: [<h1>Defining the new and emerging user experiences</h1>,<h1>Defining the new and emerging user experiences</h1>],
+            title: <h1>Defining the new and emerging user experiences</h1>,
             subTitle: <h5>Enger Bewza: Product designer</h5>,
             button: {
                 text: 'View my work',
