@@ -1,19 +1,18 @@
 import React from 'react';
 
-class Example extends React.Component {
+class Header extends React.Component {
     constructor(props) {
         super(props);
         
-        // ...
     }
 
     render() {
         return (
             <div className=''>
-                
+                {this.props.block.title}
             </div>
         );
     }
 }
 
-export default Example;
+export default Header;

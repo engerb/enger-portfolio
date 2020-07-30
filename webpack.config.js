@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 const path = require('path');
 
@@ -25,15 +25,18 @@ module.exports = {
         {
             test: /\.(js|jsx|jsm)$/,
             exclude: /node_modules/,
+            resolve: {
+                extensions: ['.js', '.jsx', '.jsm']
+            },
             use: {
-                loader: "babel-loader"
+                loader: 'babel-loader'
             }
         },
         {
             test: /\.html$/,
             use: [
                 {
-                    loader: "html-loader",
+                    loader: 'html-loader',
                 }
             ]
         }, 
