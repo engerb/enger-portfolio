@@ -6,7 +6,7 @@ import Components from './components/Components';
 class App extends React.Component {
     constructor() {
         super();
-
+        
     }
 
     render() {
@@ -14,13 +14,13 @@ class App extends React.Component {
             <Router>
                 <Switch>
                     <Route path='/serve'>
-                        {Content.serve.map((block, key) => Components(block, key))}
+                        {Content.serve.map((block, indexKey) => Components(block, indexKey))}
                     </Route>
                     <Route path='/wiivv'>
-                        {Content.wiivv.map((block, key) => Components(block, key))}
+                        {Content.wiivv.map((block, indexKey) => Components(block, indexKey))}
                     </Route>
                     <Route path='/'>
-                        {Content.home.map((block, key) => Components(block, key))}
+                        {Content.home.map((block, indexKey) => Components(block, indexKey))}
                     </Route>
                 </Switch>
             </Router>
