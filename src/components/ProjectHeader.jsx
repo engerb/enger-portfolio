@@ -3,15 +3,17 @@ import {ReactComponent as LeftArrow} from '../assets/img/leftArrow.svg';
 import {ReactComponent as DownArrowLong} from '../assets/img/downArrowLong.svg';
 import './ProjectHeader.scss'
 
+import { Link } from 'react-router-dom';
+
 export default (props) => {
     return (
         <section className={`ProjectHeader ${props.class}`}>
             <div className={`demoMain`}>
                 <div className={`uiLayer mainWidth`}>
-                    <a className={`nav`} href={`/`}>
+                    <Link to='/' className={`nav`}>
                         <LeftArrow />
                         Back to projects
-                    </a>
+                    </Link>
                     <div className={`downArrow`}>
                         <DownArrowLong />
                     </div>
@@ -42,7 +44,8 @@ export default (props) => {
                             <p>
                             {(()=>{
                                 return props.stats.contributions.links.map((item, key) => {
-                                    return <span key={key} onClick={()=>{}} data={item.link}>{item.title}</span>
+                                    return <span key={key} onClick={()=>{console.log(item.link)}}>{item.title}</span>
+                                    // return <Link to={`#${item.link}`} key={key}>{item.title}</Link>
                                 })
                             })()}
                             </p>
