@@ -1,0 +1,95 @@
+.ProjectHeader {
+    .demoMain {
+        height: 900px;
+        position: relative;
+
+        .uiLayer {
+            // position: relative;
+            // width: 100%;
+            // height: 100%;
+
+            .nav {
+                height: 50px;
+                // position: absolute;
+                // svg {
+                //     path {
+                //         stroke: red;
+                //     }
+                // }
+            }
+
+            .downArrow {
+                position: absolute;
+                bottom: 0;
+                // left: 0;
+                cursor: pointer;
+
+                // animation
+            }
+        }
+        
+
+        .demo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+
+    .textMain {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        
+            h1 {
+                max-width: 500px;
+
+                // media q
+            }
+
+            h3 {
+                max-width: 500px;
+
+                // media q
+            }
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                max-width: 200px;
+                
+                h5 {
+                    white-space: nowrap;
+                
+                    // media q
+                }
+
+                p {
+                    span {
+                        text-decoration: underline;
+                        cursor: pointer;
+
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.serve {
+    color: white;
+    background-color: black;
+}
+
+.wiivv {
+    color: white;
+    background-color: #235EAA;
+}

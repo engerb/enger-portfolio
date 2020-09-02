@@ -1,35 +1,78 @@
-// Main styles
-    // Colours
-    // $mainBG: black;
-    // $buttonBlue: #2D9CDB;
-    // $buttonRed: #EB5757;
-    // $jobContainer: #373737;
-    // $jobCard: #4C4C4C;
-    // $jobCardDetails: #616161;
-    // $jobHeaderDark: #212121;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    // Shadow
-    // $mainShadow: 0 1px 2px rgba(0,0,0,0.22), 0 2px 4px rgba(0,0,0,0.25);
+body,h1,h2,h3,h4,h5,h6,p { margin: 0; }
+body { font-family: 'Montserrat', sans-serif; }
 
-    // Border
-    // $mainRadius: 10px;
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 15px;
+}
 
-    // Spacing
-    // $largeSpace: 15px;
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 15px;
+}
 
-// Fonts
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
 
-// Mixins?
-    // https://sass-lang.com/documentation/at-rules/mixin
+h4 {
+    //
+}
 
-// Components
+h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
 
+h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
 
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
 
+.mainWidth {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
 
-// All for exmaple stuff, not important for implementation
-body {
-    // background-color: $mainBG;
-    margin: 0;
-    // font-family: "PostmatesStd", Arial, sans-serif;
+    // media q...
+}
+
+.mainPadding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    // media q...
 }

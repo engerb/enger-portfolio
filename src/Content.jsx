@@ -116,37 +116,33 @@ const Content = {
             subTitle: <h3>Safely navigates sidewalks today delivering food from restaurants to your door.</h3>,
             stats: {
                 role: {
-                    where: <h3>Postmates X</h3>,
+                    where: <h5>Postmates X</h5>,
                     who: <p>Product designer</p>,
                     when: <p>2018 - Today</p>,
                 },
                 contributions: {
-                    title: <h3>My Contributions</h3>,
-                    contributions: [
+                    title: <h5>My Contributions</h5>,
+                    links: [
                         {
                             title: 'Sidewalk UI', 
-                            action: 'scrollTo',
-                            href: '#sidewalkUI'
+                            link: 'sidewalkUI'
                         },
                         {
                             title: 'Piloting UI',
-                            action: 'scrollTo',
-                            href: '#pilotUI'
+                            link: 'pilotUI'
                         },
                         {
                             title: 'Hardware and CMF',
-                            action: 'scrollTo',
-                            href: '#hardware'
-
+                            link: 'hardware'
                         }
                     ]
                 },
                 skills: {
-                    title: <h3>Skills used</h3>,
+                    title: <h5>Skills used</h5>,
                     text: <p>UI / UX design, harware prototyping, software dev, user-research</p>
                 },
                 readingTime: {
-                    title: <h3>Reading time</h3>,
+                    title: <h5>Reading time</h5>,
                     text: <p>10 - 15 minutes</p>
                 }
             }
