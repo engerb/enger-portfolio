@@ -45,7 +45,6 @@ export default (props) => {
                             {(()=>{
                                 return props.stats.contributions.links.map((item, key) => {
                                     return <span key={key} onClick={()=>{console.log(item.link)}}>{item.title}</span>
-                                    // return <Link to={`#${item.link}`} key={key}>{item.title}</Link>
                                 })
                             })()}
                             </p>
