@@ -1,0 +1,17 @@
+.button {
+    width: fit-content;
+    cursor: pointer;
+
+    h6 {
+        padding: 22px 35px;
+    }
+
+    &.black {
+        background-color: black;
+        color: white;
+
+        svg {
+            // ... color
+        }
+    }
+}

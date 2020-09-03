@@ -5,15 +5,15 @@ const Content = {
         {
             component: 'Header',
             title: <h1>Defining the new and emerging user experiences</h1>,
-            subTitle: <h5>Enger Bewza: Product designer</h5>,
+            subTitle: <h6>Enger Bewza: Product designer</h6>,
             button: {
                 text: 'View my work',
                 href: '#myWork',
                 action: 'scrollTo'
             },
-            // mainImage: require('./assets/img/img.jpg').default,
-            // secondImage: require('./assets/img/img.jpg').default,
-            // thirdImage: require('./assets/img/img.jpg').default
+            img1: require('./assets/img/img1.jpg').default,
+            img2: require('./assets/img/img2.jpg').default,
+            img3: require('./assets/img/img3.jpg').default
         },
         {
             component: 'AlternatingFeatures',
