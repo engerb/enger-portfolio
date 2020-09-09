@@ -1,4 +1,5 @@
 import React from 'react';
+import TalkBubbleMaskRight from './components/talkBubbleMaskRight';
 
 const Content = {
     home: [
@@ -18,18 +19,41 @@ const Content = {
         {
             component: 'AlternatingFeatures',
             id: 'myWork',
-            projects: [
+            features: [
                 {
                     title: <h3>Robots that deliver your food</h3>,
                     text: <p>Serve, the autonomous delivery rover that safely navigates sidewalks today delivering food from restaurants to your door.</p>,
+                    class: 'serve',
                     href: '/serve',
                     // demoVideo: require('./assets/vid/mp4.mp4').default,
-                    demoShape: 'talkBubble'
+                    // demoShape: 'talkBubble'
+                    mask: TalkBubbleMaskRight,
+                    demo: {
+                        video: '',
+                        img: require('./assets/img/featureServe.jpg').default,
+                        width: '644px',
+                        height: '400px'
+                    }
                 },
                 {
                     title: <h3>The right size, from your phone</h3>,
                     text: <p>Ever buy shoes online only to realize they don't fit? Ya, that sucks. Dr. Scholl's 3D and Wiivv are a step in the right direction.</p>,
+                    class: 'wiivv',
                     href: '/wiivv',
+                    demo: {
+                        img: require('./assets/img/featureWiivv.jpg').default,
+                        width: '480px',
+                        height: '320px',
+                        radius: '10px'
+                    },
+                    overlayImage: {
+                        img: require('./assets/img/overlayWiivv.png').default,
+                        class: 'overlayWiivv'
+                        // width: '700px',
+                        // height: '201px',
+                        // right: '116px',
+                        // bottom: '-60px'
+                    }
                     // demoImage: require('./assets/img/img.jpg').default,
                     // overlayImage: require('./assets/img/img.png').default
                 }

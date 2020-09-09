@@ -1,10 +1,12 @@
-import React from 'react';
-import Header from './Header';
-import ProjectHeader from './ProjectHeader';
+import React from 'react'
+import Header from './Header'
+import ProjectHeader from './ProjectHeader'
+import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
     Header: Header,
-    ProjectHeader: ProjectHeader
+    ProjectHeader: ProjectHeader,
+    AlternatingFeatures: AlternatingFeatures
 }
 
 export default (block, indexKey) => {

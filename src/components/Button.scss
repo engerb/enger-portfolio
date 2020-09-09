@@ -2,8 +2,42 @@
     width: fit-content;
     cursor: pointer;
 
-    h6 {
-        padding: 22px 35px;
+    div {
+        padding: 22px 35px 12px 35px;
+        display: flex;
+
+        svg {
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+    }
+
+    &.textLink {
+        div {
+            padding-left: 0;
+        }
+
+        &.black {
+            background-color: unset;
+            color: black;
+    
+            svg {
+                path {
+                    stroke: black;
+                }
+            }
+        }
+
+        &.blue {
+            background-color: unset;
+            color: #0C6BED;
+    
+            svg {
+                path {
+                    stroke: #0C6BED;
+                }
+            }
+        }
     }
 
     &.black {

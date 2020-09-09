@@ -1,7 +1,6 @@
 import React from 'react';
 import './Button.scss'
 
-// import { Redirect } from 'react-router';
 import { useHistory } from 'react-router-dom';
 
 export default (props) => {
@@ -21,10 +20,12 @@ export default (props) => {
         }
     }
     
-
     return (
-        <div onClick={action} className={`button ${props.style ? props.style : 'black'}`}>
-            <h6>{props.text}</h6>
+        <div id={`${props.id ? props.id : ''}`} onClick={action} className={`button ${props.style ? props.style : 'black'} ${props.class ? props.class : ''}`}>
+            <div>
+                <h6>{props.text}</h6>
+                {props.children && props.children}
+            </div>
         </div>
     )
 }

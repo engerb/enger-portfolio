@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Content from './Content';
 import Components from './components/Components';
 
 export default () => {
+    // const unlisten = history.listen(() => {
+    //     window.scrollTo(0, 0);
+    // });
+
     return (
-        <Router>
+        <Router onUpdate={() => console.log("hellow")}>
             <Switch>
                 <Route path='/serve'>
                     {Content.serve.map((block, indexKey) => Components(block, indexKey))}

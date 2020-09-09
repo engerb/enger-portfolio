@@ -1,10 +1,11 @@
-import React from 'react';
+import React from 'react'
 import Button from './Button'
+import Image from './Image'
 import './Header.scss'
 
 export default (props) => {
     return (
-        <section className={`heroWrap mainWidth mainPadding`}>
+        <section id={`${props.id ? props.id : ''}`} className={`heroWrap mainWidth mainPadding ${props.class ? props.class : ''}`}>
             <div className={`hero`}>
                 <div className={`text mainPadding`}>
                     {props.subTitle}
@@ -12,9 +13,9 @@ export default (props) => {
                     <Button {...props.button} />
                 </div>
                 <div className={`images`}>
-                    <div className={`img1`} style={{backgroundImage: `url(${props.img1})`}} />
-                    <div className={`img2`} style={{backgroundImage: `url(${props.img2})`}} />
-                    <div className={`img3`} style={{backgroundImage: `url(${props.img3})`}} />
+                    <Image class={`img1`} src={props.img1} />
+                    <Image class={`img2`} src={props.img2} />
+                    <Image class={`img3`} src={props.img3} />
                 </div>
             </div>
         </section>

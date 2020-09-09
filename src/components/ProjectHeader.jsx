@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default (props) => {
     return (
-        <section className={`ProjectHeader ${props.class}`}>
+        <section id={`${props.id ? props.id : ''}`} className={`ProjectHeader ${props.class ? props.class : ''}`}>
             <div className={`demoMain`}>
                 <div className={`uiLayer mainWidth`}>
                     <Link to='/' className={`nav`}>

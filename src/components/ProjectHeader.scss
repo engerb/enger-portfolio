@@ -1,4 +1,14 @@
 .ProjectHeader {
+    &.serve {
+        color: white;
+        background-color: black;
+    }
+    
+    &.wiivv {
+        color: white;
+        background-color: #235EAA;
+    }
+
     .demoMain {
         height: 900px;
         position: relative;
@@ -92,14 +102,4 @@
             }
         }
     }
-}
-
-.serve {
-    color: white;
-    background-color: black;
-}
-
-.wiivv {
-    color: white;
-    background-color: #235EAA;
 }

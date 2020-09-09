@@ -2,6 +2,11 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 const path = require('path');
 
+const imageminGifsicle = require("imagemin-gifsicle");
+const imageminPngquant = require("imagemin-pngquant");
+const imageminSvgo = require("imagemin-svgo");
+const imageminMozjpeg = require('imagemin-mozjpeg');
+
 module.exports = {
     module: {
         rules: [
@@ -22,9 +27,35 @@ module.exports = {
         },
         {
             test: /\.(png|svg|jpg|gif|glb|hdr|zip|pdf)$/,
-            use: [{
-                loader: 'file-loader'
-            }]
+            use: [
+                {
+                    loader: 'file-loader'
+                },
+                {
+                    loader: 'img-loader',
+                    options: {
+                        plugins: [
+                            imageminGifsicle({
+                                interlaced: false
+                            }),
+                            imageminMozjpeg({
+                                progressive: true,
+                                arithmetic: false
+                            }),
+                            imageminPngquant({
+                                floyd: 0.5,
+                                speed: 2
+                            }),
+                            imageminSvgo({
+                                plugins: [
+                                    { removeTitle: true },
+                                    { convertPathData: false }
+                                ]
+                            })
+                        ]
+                    }
+                }
+            ]
         },
         {
             test: /\.(js|jsx|jsm)$/,

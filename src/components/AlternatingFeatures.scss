@@ -1,0 +1,108 @@
+.AlternatingFeatures {
+    background-color: #F6F6F6;
+    position: relative;
+
+    .contentMain {
+        position: relative;
+        width: 100%;
+        
+
+        .demoMain {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 140px;
+            width: 100%;
+
+            .demo {
+                position: absolute;
+                top: 0;
+
+                .img {
+                    background-size: cover;
+                    position: absolute;
+                    top: 0;
+
+                    .video {
+                        //
+                    }
+                }
+
+                .shadow {
+                    position: absolute;
+                    top: 20px;
+                    background-image: url('../assets/img/dotsBlack.png');
+                    background-size: 15px;
+                    opacity: 0.3;
+                }
+            }
+
+            .demoImg {
+                
+            }
+
+            .demoShadow {
+
+            }
+        }
+
+        .content {
+            margin-top: 40px;
+            background-color: white;
+            height: fit-content;
+            
+            .text {
+                padding: 40px 50px;
+                padding-bottom: 0;
+                width: 400px;
+
+                h3 {
+                    margin-bottom: 20px;
+                    color: #1D1D1D;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    font-weight: normal;
+                    color: #717171;
+                }
+
+                .button {
+                    padding-bottom: 20px;
+                    
+                    div {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+
+        :nth-child(even) {
+            .demo {
+                right: 0;
+
+                .shadow {
+                    left: -20px
+                }
+            }
+        }
+
+        :nth-child(odd) {
+            flex-direction: row-reverse;
+
+            .demo {
+                left: 0;
+
+                .shadow {
+                    right: -20px
+                }
+            }
+        }
+
+        :last-child {
+            &.demoMain {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
