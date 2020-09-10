@@ -4,7 +4,7 @@
 
     .contentMain {
         position: relative;
-        width: 100%;
+        // width: 100%;
         
 
         .demoMain {
@@ -28,21 +28,23 @@
                     }
                 }
 
+                .overlayImage {
+                    position: absolute;
+
+                    &.overlayWiivv {
+                        width: 700px;
+                        height: 201px;
+                        background-size: cover;
+                    }
+                }
+
                 .shadow {
                     position: absolute;
                     top: 20px;
                     background-image: url('../assets/img/dotsBlack.png');
-                    background-size: 15px;
+                    background-size: 10px;
                     opacity: 0.3;
                 }
-            }
-
-            .demoImg {
-                
-            }
-
-            .demoShadow {
-
             }
         }
 
@@ -84,6 +86,23 @@
                 .shadow {
                     left: -20px
                 }
+
+                .overlayWiivv {
+                    right: 116px;
+                    bottom: -120px;
+                }
+            }
+
+            &.serve {
+                .content {
+                    padding-right: 60px;
+                }
+            }
+
+            &.wiivv {
+                .content {
+                    padding-right: 150px;
+                }
             }
         }
 
@@ -95,6 +114,23 @@
 
                 .shadow {
                     right: -20px
+                }
+
+                .overlayWiivv {
+                    left: 116px;
+                    bottom: -120px;
+                }
+            }
+
+            &.serve {
+                .content {
+                    padding-left: 60px;
+                }
+            }
+
+            &.wiivv {
+                .content {
+                    padding-left: 150px;
                 }
             }
         }
