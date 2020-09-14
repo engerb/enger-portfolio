@@ -4,12 +4,8 @@ import Content from './Content';
 import Components from './components/Components';
 
 export default () => {
-    // const unlisten = history.listen(() => {
-    //     window.scrollTo(0, 0);
-    // });
-
     return (
-        <Router onUpdate={() => console.log("hellow")}>
+        <Router>
             <Switch>
                 <Route path='/serve'>
                     {Content.serve.map((block, indexKey) => Components(block, indexKey))}
