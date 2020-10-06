@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
 import ProjectHeader from './ProjectHeader'
 import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
     Header: Header,
+    Footer: Footer,
     ProjectHeader: ProjectHeader,
     AlternatingFeatures: AlternatingFeatures
 }

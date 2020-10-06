@@ -82,7 +82,11 @@ const Content = {
         }, 
         {
             component: 'Footer',
-            // headshot: require('./assets/img/img.jpg').default,
+            headshot: require('./assets/img/me.jpg').default,
+            bg_layers: [
+                require('./assets/img/footer_bg_shapes.svg').default,
+                require('./assets/img/footer_bg_pattern.svg').default,
+            ],
             title: <h3>Enger Bewza: Bay area product designer</h3>,
             text: [
                 <p>Hello! Thanks for checking out my work!</p>,
@@ -94,7 +98,7 @@ const Content = {
                 // href: require('./assets/docs/resume.pdf').default, 
                 target: '_blank',
                 icon: {
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/icon_resume.svg').default,
                     type: 'overflowRight' 
                 }
             },
@@ -103,29 +107,29 @@ const Content = {
                 href: '',
                 target: '...',
                 icon: {
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/icon_mail.svg').default,
                     type: 'overflowRight' 
                 }
             },
             social: [
                 {
                     alt: 'Linkedin',
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/social_in.svg').default,
                     href: '',
                 },
                 {
                     alt: 'Github',
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/social_github.svg').default,
                     href: '',
                 },
                 {
                     alt: 'Codepen',
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/social_codepen.svg').default,
                     href: '',
                 },
                 {
                     alt: 'Behance',
-                    // image: require('./assets/img/img.png').default,
+                    image: require('./assets/img/social_be.svg').default,
                     href: '',
                 },
             ]
