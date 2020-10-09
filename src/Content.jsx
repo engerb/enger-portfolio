@@ -83,9 +83,9 @@ const Content = {
         {
             component: 'Footer',
             headshot: require('./assets/img/me.jpg').default,
-            bg_layers: [
-                require('./assets/img/footer_bg_shapes.svg').default,
-                require('./assets/img/footer_bg_pattern.svg').default,
+            bgLayers: [
+                require('./assets/img/footer_bg_shapes.png').default,
+                require('./assets/img/footer_bg_pattern.png').default,
             ],
             title: <h3>Enger Bewza: Bay area product designer</h3>,
             text: [
@@ -93,24 +93,29 @@ const Content = {
                 <p>I started learning 3D modeling back in 2005. I also built games and websites in my free time. I went to school for 3D Design in 2011 and was eventually  drawn into  product design. I enjoy keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people want is the most exciting part.</p>,
                 <p>I'm passionate about working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product. </p>,
             ],
-            resumeButton: {
-                text: 'Download résumé',
-                // href: require('./assets/docs/resume.pdf').default, 
-                target: '_blank',
-                icon: {
-                    image: require('./assets/img/icon_resume.svg').default,
-                    type: 'overflowRight' 
-                }
-            },
-            emailButton: {
-                text: 'Email me',
-                href: '',
-                target: '...',
-                icon: {
-                    image: require('./assets/img/icon_mail.svg').default,
-                    type: 'overflowRight' 
-                }
-            },
+            buttons: [
+                {
+                    text: 'Download résumé',
+                    href: require('./assets/docs/resume.pdf').default, 
+                    action: 'linkExternal',
+                    target: '_blank',
+                    iconImg: {
+                        image: require('./assets/img/icon_resume.svg').default,
+                        class: 'overflowRight' 
+                    }
+                },
+                {
+                    text: 'Email me',
+                    action: 'textCopyModal',
+                    copy: (()=>{
+                        return 'eng' + 'er' + 'be' + 'wza' + '@' + 'gm' + 'ail' + '.c' + 'om'
+                    }),
+                    iconImg: {
+                        image: require('./assets/img/icon_mail.svg').default,
+                        class: 'overflowRight' 
+                    }
+                },
+            ],
             social: [
                 {
                     alt: 'Linkedin',

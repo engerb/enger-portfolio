@@ -2,13 +2,25 @@
     width: fit-content;
     cursor: pointer;
 
-    div {
+    .buttonContent {
         padding: 22px 35px 12px 35px;
         display: flex;
+        position: relative;
 
         svg {
             margin-top: 5px;
             margin-left: 15px;
+        }
+
+        .overflowRight {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            right: -20px;
+            bottom: -25px;
         }
     }
 
