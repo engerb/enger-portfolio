@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './CopyModal.scss'
 import useStore from '../store/Store'
 
@@ -16,6 +16,18 @@ export default (props) => {
         window.removeEventListener('scroll', onScroll)
     }
 
+    const [copySuccess, setCopySuccess] = useState(false)
+    const textAreaRef = useRef(null)
+
+    const copyToClipboard = (e) => {
+        e.stopPropagation()
+        textAreaRef.current.select()
+        document.execCommand('copy')
+
+        e.target.focus()
+        setCopySuccess(true)
+    }
+
     useEffect(() => {
         setTransIn(true)
 
@@ -24,12 +36,20 @@ export default (props) => {
         return () => {
             window.removeEventListener('scroll', onScroll)
         }
-    }, []); 
+    }, []) 
     
     return (
-        <div className={`copyModal ${(transIn && copyModal.open && !copyModal.closing) ? 'open' : ''}`} onClick={()=> closeCopyModal('trans')}>
-            <div className={``}>
-                
+        <div className={`copyModal ${(transIn && copyModal.open && !copyModal.closing) ? 'open' : ''}`} onClick={(e)=> {closeCopyModal('trans'), e.stopPropagation()}}>
+            <div className={`modal`} onClick={(e) => {e.stopPropagation()}}>
+                <textarea ref={textAreaRef} defaultValue={copyModal.text} readOnly={true}/>
+                {document.queryCommandSupported('copy') &&
+                    <div className={'copyButton'} onClick={copyToClipboard}>
+                        {!copySuccess
+                            ? <h6>Copy text</h6>
+                            : <h6>Copied! ✓</h6>
+                        }
+                    </div>
+                }
             </div>
         </div>
     )
