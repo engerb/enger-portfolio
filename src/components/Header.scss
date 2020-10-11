@@ -1,6 +1,8 @@
 .hero {
     position: relative;
-    height: 700px;
+    min-height: 700px;
+    height: calc(100vh - 200px);
+    max-height: 1200px;
 
     .text {
         width: 600px;
@@ -47,7 +49,8 @@
                 width: 250px;
                 height: 350px;
                 right: 0;
-                bottom: 0;
+                // bottom: 0;
+                top: 350px;
                 z-index: -1;
             }
 

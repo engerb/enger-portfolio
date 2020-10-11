@@ -11,7 +11,7 @@ const Components = {
     AlternatingFeatures: AlternatingFeatures
 }
 
-export default (block, indexKey) => {
+export default (block, indexKey) => {   
     // component does exist
     if (typeof Components[block.component] !== 'undefined') {
         return React.createElement(Components[block.component], {

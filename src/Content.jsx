@@ -9,7 +9,7 @@ const Content = {
             subTitle: <h6>Enger Bewza: Product designer</h6>,
             button: {
                 text: 'View my work',
-                href: '#myWork',
+                href: 'myWork',
                 action: 'scrollTo'
             },
             img1: require('./assets/img/img1.jpg').default,
@@ -120,22 +120,22 @@ const Content = {
                 {
                     alt: 'Linkedin',
                     image: require('./assets/img/social_in.svg').default,
-                    href: '',
+                    href: 'https://www.linkedin.com/in/engerbewza/',
                 },
                 {
                     alt: 'Github',
                     image: require('./assets/img/social_github.svg').default,
-                    href: '',
+                    href: 'https://github.com/engerb',
                 },
                 {
                     alt: 'Codepen',
                     image: require('./assets/img/social_codepen.svg').default,
-                    href: '',
+                    href: 'https://codepen.io/enger',
                 },
                 {
                     alt: 'Behance',
                     image: require('./assets/img/social_be.svg').default,
-                    href: '',
+                    href: 'https://www.behance.net/enger-b',
                 },
             ]
         }

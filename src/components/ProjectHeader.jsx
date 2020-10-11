@@ -1,11 +1,26 @@
-import React from 'react';
-import {ReactComponent as LeftArrow} from '../assets/img/leftArrow.svg';
-import {ReactComponent as DownArrowLong} from '../assets/img/downArrowLong.svg';
+import React, { useRef } from 'react'
+import {ReactComponent as LeftArrow} from '../assets/img/leftArrow.svg'
+import {ReactComponent as DownArrowLong} from '../assets/img/downArrowLong.svg'
 import './ProjectHeader.scss'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 export default (props) => {
+    const scrollRef = useRef(null)
+    const scrollToRef = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToSection = (sectionID) => {
+        const elem = document.getElementById(sectionID)
+
+        if (elem) {
+            elem.scrollIntoView({ behavior: 'smooth' })
+        } else {
+            console.warn('Cannot find section: #', sectionID)
+        }
+    }
+
     return (
         <section id={`${props.id ? props.id : ''}`} className={`ProjectHeader ${props.class ? props.class : ''}`}>
             <div className={`demoMain`}>
@@ -14,7 +29,7 @@ export default (props) => {
                         <LeftArrow />
                         Back to projects
                     </Link>
-                    <div className={`downArrow`}>
+                    <div className={`downArrow`} onClick={()=>{ scrollToRef(scrollRef) }}>
                         <DownArrowLong />
                     </div>
                 </div>
@@ -27,7 +42,7 @@ export default (props) => {
                     }
                 </div>
             </div>
-            <div className={`textMain mainWidth mainPadding`}>
+            <div ref={scrollRef} className={`textMain mainWidth mainPadding`}>
                 <div className={`textMain`}>
                     <div className={`title`}>
                         {props.title}
@@ -44,7 +59,7 @@ export default (props) => {
                             <p>
                             {(()=>{
                                 return props.stats.contributions.links.map((item, key) => {
-                                    return <span key={key} onClick={()=>{console.log(item.link)}}>{item.title}</span>
+                                    return <span key={key} onClick={()=>{scrollToSection(item.link)}}>{item.title}</span>
                                 })
                             })()}
                             </p>

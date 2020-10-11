@@ -1,22 +1,34 @@
-import React from 'react';
+import React from 'react'
+import { useHistory } from 'react-router-dom'
+import useStore from '../store/Store'
 import './Button.scss'
 
-import { useHistory } from 'react-router-dom';
 
 export default (props) => {
-    const history = useHistory();
+    const setCopyModal = useStore(state => state.setCopyModal)
+    const page = useStore(state => state.page)
+
+    const history = useHistory()
     const action = () => {
         if (props.action === 'scrollTo') {
+            const elem = document.getElementById(props.href);
+
+            if (elem) {
+                elem.scrollIntoView({ behavior: 'smooth' })
+            } else {
+                console.warn('Cannot find section: #', sectionID)
+            }
 
         } else if (props.action === 'linkExternal') {
             window.open(props.href, props.target)
 
         } else if (props.action === 'textCopyModal') {
-            console.log(props.copy())
+            setCopyModal( props.copy() )
+        
+        // 'linkInternal' catch all
         } else { 
-            // 'linkInternal' catch all
             if (props.href) {
-                history.push(props.href);
+                history.push(props.href)
             } else {
                 console.warn('Could not handle button action, props: ', props)
             }
