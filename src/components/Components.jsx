@@ -2,26 +2,28 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import ProjectHeader from './ProjectHeader'
+import CountdownFeatures from './CountdownFeatures'
 import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
     Header: Header,
     Footer: Footer,
     ProjectHeader: ProjectHeader,
-    AlternatingFeatures: AlternatingFeatures
+    CountdownFeatures: CountdownFeatures,
+    AlternatingFeatures: AlternatingFeatures,
 }
 
-export default (block, indexKey) => {   
+export default (item, indexKey) => {   
     // component does exist
-    if (typeof Components[block.component] !== 'undefined') {
-        return React.createElement(Components[block.component], {
-            key: (block.key ? block.key : indexKey),
-            ...block
+    if (typeof Components[item.component] !== 'undefined') {
+        return React.createElement(Components[item.component], {
+            key: (item.key ? item.key : indexKey),
+            ...item
         })
     } else {
         return React.createElement(
-            () => <div>The component {block.component} has not been created yet.</div>,
-            { key: (block.key ? block.key : indexKey) }
+            () => <div>The component {item.component} has not been created yet.</div>,
+            { key: (item.key ? item.key : indexKey) }
         )
     }
 }
