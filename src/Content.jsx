@@ -64,19 +64,33 @@ const Content = {
             title: <h3>A few things I do</h3>,
             features: [
                 {
-                    title: <h4>UX / UI design</h4>,
+                    title: <h5>UX / UI design</h5>,
                     text: <p>From logic flows, prototypes to UI design, design-systems and dev handoffs.</p>,
-                    // demoVideo: require('./assets/vid/mp4.mp4').default, 
+                    visuals: [
+                        require('./assets/img/CountdownFeatures_1_1.png').default,
+                        require('./assets/img/CountdownFeatures_1_2.png').default,
+                        require('./assets/img/CountdownFeatures_1_3.png').default,
+                    ]
                 },
                 {
-                    title: <h4>Physical product and CMF</h4>,
+                    title: <h5>Physical product and CMF</h5>,
                     text: <p>Laser cut and 3D printed prototypes all the way to finished product along with packaging.</p>,
-                    // demoVideo: require('./assets/vid/mp4.mp4').default, 
+                    visuals: [
+                        require('./assets/img/CountdownFeatures_2_1.png').default,
+                        require('./assets/img/CountdownFeatures_2_2.png').default,
+                        require('./assets/img/CountdownFeatures_2_3.png').default,
+                        require('./assets/img/CountdownFeatures_2_4.png').default,
+                    ] 
                 },
                 {
-                    title: <h4>Dev work</h4>,
+                    title: <h5>Dev work</h5>,
                     text: <p>Web-dev, real prototypes, and even C code for embedded systems.</p>,
-                    // demoVideo: require('./assets/vid/mp4.mp4').default, 
+                    visuals: [
+                        require('./assets/img/CountdownFeatures_3_1.png').default,
+                        require('./assets/img/CountdownFeatures_3_2.png').default,
+                        require('./assets/img/CountdownFeatures_3_3.png').default,
+                        require('./assets/img/CountdownFeatures_3_4.png').default,
+                    ] 
                 },
             ]
         }, 
@@ -90,7 +104,7 @@ const Content = {
             title: <h3>Enger Bewza: Bay area product designer</h3>,
             text: [
                 <p>Hello! Thanks for checking out my work!</p>,
-                <p>I started learning 3D modeling back in 2005. I also built games and websites in my free time. I went to school for 3D Design in 2011 and was eventually  drawn into  product design. I enjoy keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people want is the most exciting part.</p>,
+                <p>I started out learning 3D design back in 2005. I also built games and websites in my free time. I went to school for 3D Design in 2011 and was eventually  drawn into  product design. I enjoy keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people want is the most exciting part.</p>,
                 <p>I'm passionate about working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product. </p>,
             ],
             buttons: [

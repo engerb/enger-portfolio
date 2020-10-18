@@ -82,7 +82,7 @@ module.exports = {
             hash: true,
             template: './src/index.html',
             filename: './index.html',
-            favicon: './src/assets/img/favicon.svg'
+            favicon: './src/assets/img/favicon.png'
         }),
     ]
 };
