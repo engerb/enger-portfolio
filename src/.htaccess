@@ -13,4 +13,39 @@
     RewriteCond %{REQUEST_FILENAME} !-l
     RewriteRule . /index.html [L]
 
+    <IfModule mod_deflate.c>
+        # GZIP
+        ## allows you to have certain browsers uncompress information on the fly
+        AddEncoding gzip .gz
+        ## serve gzip .css files if they exist and the client accepts gzip
+        RewriteCond %{HTTP:Accept-encoding} gzip
+        RewriteCond %{REQUEST_FILENAME}\.gz -s
+        RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+        ## serve gzip .js files if they exist and the client accepts gzip
+        RewriteCond %{HTTP:Accept-encoding} gzip
+        RewriteCond %{REQUEST_FILENAME}\.gz -s
+        RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+        ## serve gzip .html files if they exist and the client accepts gzip
+        RewriteCond %{HTTP:Accept-encoding} gzip
+        RewriteCond %{REQUEST_FILENAME}\.gz -s
+        RewriteRule ^(.*)\.html $1\.html\.gz [QSA]
+        ## serve correct content types, and prevent mod_deflate double gzip
+        RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=is_gzip:1]
+        RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1,E=is_gzip:1]
+        RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1,E=is_gzip:1]
+        Header set Content-Encoding "gzip" env=is_gzip
+    </IfModule>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType video/mp4 "access plus 1 week"
+    ExpiresByType text/javascript "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-javascript "access plus 1 week"
+    ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
