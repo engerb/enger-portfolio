@@ -3,9 +3,6 @@ import './CopyModal.scss'
 import useStore from '../store/Store'
 
 export default (props) => {
-    const homePageScrollY = useStore(state => state.homePageScrollY)
-    const setHomePageScrollY = useStore(state => state.setHomePageScrollY)
-
     const copyModal = useStore(state => state.copyModal)
     const closeCopyModal = useStore(state => state.closeCopyModal)
 

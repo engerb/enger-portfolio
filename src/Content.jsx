@@ -12,9 +12,11 @@ const Content = {
                 href: 'myWork',
                 action: 'scrollTo'
             },
-            img1: require('./assets/img/img1.jpg').default,
-            img2: require('./assets/img/img2.jpg').default,
-            img3: require('./assets/img/img3.jpg').default
+            img: [
+                require('./assets/img/img1.jpg').default,
+                require('./assets/img/img2.jpg').default,
+                require('./assets/img/img3.jpg').default
+            ]
         },
         {
             component: 'AlternatingFeatures',
@@ -25,14 +27,10 @@ const Content = {
                     text: <p>Serve, the autonomous delivery rover that safely navigates sidewalks today delivering food from restaurants to your door.</p>,
                     class: 'serve',
                     href: '/serve',
-                    // demoVideo: require('./assets/vid/mp4.mp4').default,
-                    // demoShape: 'talkBubble'
                     mask: TalkBubbleMaskRight,
                     demo: {
-                        video: '',
+                        video: require('./assets/video/serve_homepage_video_reduced.mp4').default,
                         img: require('./assets/img/featureServe.jpg').default,
-                        width: '644px',
-                        height: '400px'
                     }
                 },
                 {
@@ -42,25 +40,16 @@ const Content = {
                     href: '/wiivv',
                     demo: {
                         img: require('./assets/img/featureWiivv.jpg').default,
-                        width: '480px',
-                        height: '320px',
-                        radius: '10px'
                     },
                     overlayImage: {
                         img: require('./assets/img/overlayWiivv.png').default,
                         class: 'overlayWiivv'
-                        // width: '700px',
-                        // height: '201px',
-                        // right: '116px',
-                        // bottom: '-60px'
                     }
-                    // demoImage: require('./assets/img/img.jpg').default,
-                    // overlayImage: require('./assets/img/img.png').default
                 }
             ]
         },
         {
-            component: 'CountdownFeatures',
+            component: 'AccordionFeatures',
             title: <h3>A few things I do</h3>,
             features: [
                 {

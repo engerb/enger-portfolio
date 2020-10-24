@@ -13,9 +13,9 @@ export default (props) => {
                     <Button {...props.button} />
                 </div>
                 <div className={`images`}>
-                    <Image class={`img1`} src={props.img1} />
-                    <Image class={`img2`} src={props.img2} />
-                    <Image class={`img3`} src={props.img3} />
+                    {props.img.map((img, i) => {
+                        return <Image class={`img${i + 1}`} key={i} src={img} />
+                    })}
                 </div>
             </div>
         </section>

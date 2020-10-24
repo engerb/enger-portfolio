@@ -2,14 +2,14 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import ProjectHeader from './ProjectHeader'
-import CountdownFeatures from './CountdownFeatures'
+import AccordionFeatures from './AccordionFeatures'
 import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
     Header: Header,
     Footer: Footer,
     ProjectHeader: ProjectHeader,
-    CountdownFeatures: CountdownFeatures,
+    AccordionFeatures: AccordionFeatures,
     AlternatingFeatures: AlternatingFeatures,
 }
 

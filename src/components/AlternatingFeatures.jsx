@@ -1,36 +1,33 @@
 import React from 'react';
 import Button from './Button'
-// import {ReactComponent as LeftArrow} from '../assets/img/leftArrow.svg';
 import {ReactComponent as RightArrow} from '../assets/img/rightArrow.svg';
-// import {ReactComponent as DownArrowLong} from '../assets/img/downArrowLong.svg';
 import './AlternatingFeatures.scss'
 
-import { Link } from 'react-router-dom';
-
 export default (props) => {
-    // const refs = useRef();
-    // refs.current = [];
-
-    // const addToRefs = el => {
-    //     if (el && !refs.current.includes(el)) {
-    //         refs.current.push(el);
-    //     }
-    // };
-
     return (
         <section id={`${props.id ? props.id : ''}`} className={`AlternatingFeatures ${props.class ? props.class : ''}`}>
             <div className={`contentMain mainWidth mainPadding`}>
                 {props.features.map((feature, indexKey) => {
-                    return <div key={indexKey} className={`demoMain ${feature.class}`} style={{minHeight: feature.demo.height}}>
-                        <div className={`demo`} style={{width: feature.demo.width, height: feature.demo.height}}>
-                            {feature.mask && <feature.mask askID={'mask' + indexKey} key={'mask' + indexKey} />}
-                            <div className={`shadow`} style={{width: feature.demo.width, height: feature.demo.height, borderRadius: feature.demo.radius, clipPath: 'url(#mask' + indexKey + ')'}} />
-                            <div className={`img`} style={{width: feature.demo.width, height: feature.demo.height, backgroundImage: 'url(' + feature.demo.img + ')', borderRadius: feature.demo.radius, clipPath: 'url(#mask' + indexKey + ')'}}>
-                                {feature.demo.video && <div></div>}
-                            </div>
+                    return <div key={indexKey} className={`demoMain ${feature.class}`}>
+                        <div className={`demo`}>
+                            {feature.mask && <feature.mask maskID={'mask' + indexKey} key={'mask' + indexKey} />}
+                            <div className={`shadow`} style={{clipPath: 'url(#mask' + indexKey + ')'}} />
+                            {feature.demo.img &&
+                                <div className={`img`} style={{backgroundImage: 'url(' + feature.demo.img + ')', clipPath: 'url(#mask' + indexKey + ')'}}>
+                                    {feature.demo.video && <div></div>}
+                                </div>
+                            }
+                            {feature.demo.video && 
+                                <video poster={feature.demo.img ? feature.demo.img : ''} autoPlay loop muted style={{clipPath: 'url(#mask' + indexKey + ')'}}>
+                                    <source src={feature.demo.video} type='video/mp4' />
+                                    {feature.demo.img &&
+                                        <img src={feature.demo.img} />   
+                                    }
+                                </video>
+                            }                            
                             {feature.overlayImage && <div className={`overlayImage ${feature.overlayImage.class}`} style={{backgroundImage: 'url(' + feature.overlayImage.img + ')'}} />}
                         </div>
-                        <div className={`content`} style={{minHeight: feature.demo.height}}>
+                        <div className={`content`}>
                             <div className={`text`}>
                                 {feature.title}
                                 {feature.text}
