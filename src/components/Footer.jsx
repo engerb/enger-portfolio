@@ -5,7 +5,7 @@ import './Footer.scss'
 
 export default (props) => {
     return (
-        <section id={`${props.id ? props.id : ''}`} className={`footer ${props.class ? props.class : ''}`}>
+        <section id={`${props.id ? props.id : ''}`} className={`${props.className} ${props.class ? props.class : ''}`}>
 
             <div className={`color`}>
                 <div className={`bgLayers`}>

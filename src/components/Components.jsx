@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import ProjectIntro from './ProjectIntro'
 import ProjectHeader from './ProjectHeader'
 import AccordionFeatures from './AccordionFeatures'
 import AlternatingFeatures from './AlternatingFeatures'
@@ -8,6 +9,7 @@ import AlternatingFeatures from './AlternatingFeatures'
 const Components = {
     Header: Header,
     Footer: Footer,
+    ProjectIntro: ProjectIntro,
     ProjectHeader: ProjectHeader,
     AccordionFeatures: AccordionFeatures,
     AlternatingFeatures: AlternatingFeatures,
@@ -18,6 +20,7 @@ export default (item, indexKey) => {
     if (typeof Components[item.component] !== 'undefined') {
         return React.createElement(Components[item.component], {
             key: (item.key ? item.key : indexKey),
+            className: item.component,
             ...item
         })
     } else {

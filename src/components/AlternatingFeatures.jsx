@@ -5,7 +5,7 @@ import './AlternatingFeatures.scss'
 
 export default (props) => {
     return (
-        <section id={`${props.id ? props.id : ''}`} className={`AlternatingFeatures ${props.class ? props.class : ''}`}>
+        <section id={`${props.id ? props.id : ''}`} className={`${props.className} ${props.class ? props.class : ''}`}>
             <div className={`contentMain mainWidth mainPadding`}>
                 {props.features.map((feature, indexKey) => {
                     return <div key={indexKey} className={`demoMain ${feature.class}`}>

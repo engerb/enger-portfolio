@@ -5,7 +5,7 @@ import './Header.scss'
 
 export default (props) => {
     return (
-        <section id={`${props.id ? props.id : ''}`} className={`heroWrap mainWidth mainPadding ${props.class ? props.class : ''}`}>
+        <section id={`${props.id ? props.id : ''}`} className={`mainWidth mainPadding ${props.className} ${props.class ? props.class : ''}`}>
             <div className={`hero`}>
                 <div className={`text mainPadding`}>
                     {props.subTitle}

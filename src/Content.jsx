@@ -184,7 +184,11 @@ const Content = {
             }
         },
         {
-
+            component: 'ProjectIntro',
+            title: <h2>Delivery robots?</h2>,
+            description: <p>In 2018, our design team set out to make delivery robot interactions more intuitive and enjoyable. The landscape at that point was very undefined with robots ranging from difficult to understand all the way to intimidating. </p>,
+            goals: ['Friendly and approachable', 'Able to communicate intent', 'People should feel safe around it', 'Secure and hygienic', 'Recognizable, not just some robot'],
+            img: require('./assets/img/serveLoading.jpg').default
         }
     ],
     wiivv: [

@@ -36,7 +36,7 @@ export default (props) => {
     }, []) 
     
     return (
-        <div className={`copyModal ${(transIn && copyModal.open && !copyModal.closing) ? 'open' : ''}`} onClick={(e)=> {closeCopyModal('trans'), e.stopPropagation()}}>
+        <div className={`CopyModal ${(transIn && copyModal.open && !copyModal.closing) ? 'open' : ''}`} onClick={(e)=> {closeCopyModal('trans'), e.stopPropagation()}}>
             <div className={`modal`} onClick={(e) => {e.stopPropagation()}}>
                 <textarea ref={textAreaRef} defaultValue={copyModal.text} readOnly={true}/>
                 {document.queryCommandSupported('copy') &&

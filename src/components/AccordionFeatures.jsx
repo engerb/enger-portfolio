@@ -9,7 +9,7 @@ export default (props) => {
     const [contentIndex, setContentIndex] = useState(0)
 
     return (
-        <section id={`${props.id ? props.id : ''}`} className={`accordionFeatures ${props.class ? props.class : ''}`}>
+        <section id={`${props.id ? props.id : ''}`} className={`${props.className} ${props.class ? props.class : ''}`}>
             <div className={`mainWidth mainPadding`}>
                 <div className={`flexWrap`}>
                     <div className={`visuals`}>

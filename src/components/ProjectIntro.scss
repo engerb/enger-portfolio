@@ -1,0 +1,65 @@
+@import '../_variables';
+
+.ProjectIntro {
+    div {
+        display: flex;
+        flex-flow: column;
+
+        &.imgLayout {
+            flex-flow: row;
+            justify-content: space-between;
+
+            .text {
+                flex-basis: 500px;
+                position: relative;
+
+                .description, 
+                .goals {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .text {
+            display: flex;
+            
+            .description {
+                width: 600px;
+
+                p {
+                    font-size: 24px;
+                    line-height: 45px;
+                    color: #525252;
+                }
+            }
+
+            .goals {
+                width: 400px;
+
+                ul {
+                    margin: 0;
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        padding-left: 10px;
+                        font-size: 24px;
+                        line-height: 45px;
+                        color: #717171;
+
+                        &:before {
+                            content: '•';
+                            padding-right: 10px;
+                            color: #717171;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Image {
+            flex-basis: 500px;
+        }
+    }
+}
