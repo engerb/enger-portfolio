@@ -19,11 +19,13 @@ export default (props) => {
     const placeholder = props.placeholder 
     
     return (
-        // (()=>{props.realImg ?
-            // <img /> :
-            <div id={`${props.id ? props.id : ''}`} className={`${sourceLoaded ? 'loaded': ''} Image imgWrapper ${props.class ? props.class : ''}`} style={{...props.style}} >
+        <>
+        {props.realImg
+            ? <img scr={props.src} className={`${sourceLoaded ? 'loaded': ''} ${props.class ? props.class : ''}`} />
+            : <div id={`${props.id ? props.id : ''}`} className={`${sourceLoaded ? 'loaded': ''} Image imgWrapper ${props.class ? props.class : ''}`} style={{...props.style}} >
                 <div className={`imgChild`} style={{backgroundImage: `url(${sourceLoaded || placeholder})`}} />
             </div>
-        // })()
+        }
+        </>
     )
 }

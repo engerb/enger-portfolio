@@ -1,17 +1,21 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import SplitImage from './SplitImage'
 import ProjectIntro from './ProjectIntro'
 import ProjectHeader from './ProjectHeader'
 import AccordionFeatures from './AccordionFeatures'
+import AlternatingContent from './AlternatingContent'
 import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
     Header: Header,
     Footer: Footer,
+    SplitImage: SplitImage,
     ProjectIntro: ProjectIntro,
     ProjectHeader: ProjectHeader,
     AccordionFeatures: AccordionFeatures,
+    AlternatingContent: AlternatingContent,
     AlternatingFeatures: AlternatingFeatures,
 }
 
