@@ -1,0 +1,164 @@
+@import '../_variables';
+
+.ExpandingCards {
+    &.paddingTopBottom75 {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .contentModalMain {
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        &.closing {
+            .mainWidth {
+                .contentModal {
+                    opacity: 0;
+                    transform: translateY(100px) scale(0.95);
+                }
+
+                .modalBG {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .mainWidth {
+            height: calc(100vh - 100px);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .contentModal {
+                background-color: white;
+                border-radius: 30px;
+                width: 100%;
+                min-height: 300px;
+                position: relative;
+                overflow: hidden;
+                transition-duration: 200ms;
+                transition-timing-function: ease-out;
+
+                animation-timing-function: ease-out;
+                animation: ExpandingCards_transInModal 200ms;
+                @keyframes ExpandingCards_transInModal {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(100px) scale(0.95);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                }
+
+                .contentMain {
+                    width: 100%;
+                    overflow-y: scroll;
+
+                    .content {
+                        box-sizing: border-box;
+                        padding: 30px 20px;
+                        position: relative;
+                    }
+                }
+
+                .header {
+                    height: 75px;
+                    width: 100%;
+                    border-bottom: 0.5px solid #F6F6F6;
+                    position: relative;
+
+                    h5 {
+                        margin-top: 22px;
+                        color: #525252;
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .modalBG {
+                height: 100%;
+                width: 100vw;
+                background-color: black;
+                opacity: 0.4;
+                position: fixed;
+                top: 0;
+                left: 0;
+                transition-duration: 200ms;
+                transition-timing-function: ease-out;
+    
+                animation-timing-function: ease-out;
+                animation: ExpandingCards_transInBG 300ms;
+                @keyframes ExpandingCards_transInBG {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .card {
+                background-color: #F6F6F6; 
+                border-radius: 15px;
+                position: relative;
+                box-sizing: border-box;
+                padding: 30px 20px;
+                margin-left: 15px;
+                margin-right: 15px;
+                text-align: center;
+
+                h5, img, p {
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                .button {
+                    cursor: pointer;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    svg {
+                        margin-right: 18px;
+                        margin-bottom: 15px;
+                    }
+
+                    h6 {
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

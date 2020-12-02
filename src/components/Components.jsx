@@ -4,23 +4,28 @@ import Footer from './Footer'
 import SplitImage from './SplitImage'
 import ProjectIntro from './ProjectIntro'
 import ProjectHeader from './ProjectHeader'
+import ProjectFooter from './ProjectFooter'
+import TabbedContent from './TabbedContent'
+import ExpandingCards from './ExpandingCards'
 import AccordionFeatures from './AccordionFeatures'
 import AlternatingContent from './AlternatingContent'
 import AlternatingFeatures from './AlternatingFeatures'
 
 const Components = {
-    Header: Header,
-    Footer: Footer,
-    SplitImage: SplitImage,
-    ProjectIntro: ProjectIntro,
-    ProjectHeader: ProjectHeader,
-    AccordionFeatures: AccordionFeatures,
-    AlternatingContent: AlternatingContent,
-    AlternatingFeatures: AlternatingFeatures,
+    Header,
+    Footer,
+    SplitImage,
+    ProjectIntro,
+    ProjectHeader,
+    ProjectFooter,
+    TabbedContent,
+    ExpandingCards,
+    AccordionFeatures,
+    AlternatingContent,
+    AlternatingFeatures,
 }
 
 export default (item, indexKey) => {   
-    // component does exist
     if (typeof Components[item.component] !== 'undefined') {
         return React.createElement(Components[item.component], {
             key: (item.key ? item.key : indexKey),

@@ -41,21 +41,23 @@ export default (props) => {
                     </div>
                 }
                 {props.alternatingContent &&
-                    <div className={`alternatingContent ${props.startReversed ? 'reversed' : ''}`}>
+                    <div className={`alternatingContent ${props.startReversed ? 'reversedDir' : 'normalDir'}`}>
                         {props.alternatingContent.map((item, i) => {
                             return <div key={i} className={`item`}>
-                                <div className={`text`}>
-                                    {item.text.map((text, ii) => {
-                                        return React.createElement(text.type, {
-                                            children: text.props.children,
-                                            className: props.textClass ? props.textClass : '',
-                                            key: ii
-                                        })
-                                    })}
-                                </div>
-                                <div className={`content`} style={{flexBasis: item.content.width ? item.content.width : '50%'}}>
-                                    {item.content.image &&
-                                        <img className={`${item.content.class ? item.content.class : ''}`} />
+                                {item.text &&
+                                    <div className={`text`}>
+                                        {item.text.map((text, ii) => {
+                                            return React.createElement(text.type, {
+                                                children: text.props.children,
+                                                className: props.textClass ? props.textClass : '',
+                                                key: ii
+                                            })
+                                        })}
+                                    </div>
+                                }
+                                <div className={`content`} style={{minWidth: item.content.width ? item.content.width : '40%'}}> {/*style={{flexBasis: item.content.width ? item.content.width : '50%'}}>*/}
+                                    {item.content.img &&
+                                        <img className={`${item.content.class ? item.content.class : ''}`} src={item.content.img} />
                                     }
                                     {item.content.video &&
                                         <video poster={item.content.videoImg ? item.content.videoImg : ''} className={`${item.content.class ? item.content.class : ''}`} autoPlay loop muted>

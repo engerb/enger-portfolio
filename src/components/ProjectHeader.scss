@@ -1,3 +1,5 @@
+@import '../_variables';
+
 .ProjectHeader {
     &.serve {
         color: white;
@@ -7,6 +9,18 @@
     &.wiivv {
         color: white;
         background-color: #235EAA;
+
+        .demoMain {
+            background-image: url('../assets/img/wiivvHeaderLarge.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @media only screen and (max-width: $widthPhone) {    
+                background-image: url('../assets/img/wiivvHeaderMobile.png');
+                // background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
 
         .textMain {
             .title {            
@@ -18,7 +32,8 @@
     }
 
     .demoMain {
-        height: 900px;
+        height: 100vh;
+        max-height: 900px;
         position: relative;
 
         .uiLayer {
@@ -103,6 +118,7 @@
                         text-decoration: underline;
                         cursor: pointer;
                         margin-right: 4px;
+                        display: inline-block;
                         
                         // hover: colour
                     }

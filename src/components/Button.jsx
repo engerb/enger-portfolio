@@ -37,7 +37,7 @@ export default (props) => {
     
     return (
         <div id={`${props.id ? props.id : ''}`} onClick={action} className={`Button ${props.style ? props.style : 'black'} ${props.class ? props.class : ''}`}>
-            <div className={`buttonContent`}>
+            <div className={`buttonContent ${props.back && 'reverse'}`}>
                 <h6>{props.text}</h6>
                 {props.children && props.children}
                 {props.iconImg &&

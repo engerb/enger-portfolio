@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import Button from './Button'
-import {ReactComponent as RightArrow} from '../assets/img/rightArrow.svg';
+import {ReactComponent as RightArrow} from '../assets/img/rightArrow.svg'
 import './AlternatingFeatures.scss'
 
 export default (props) => {

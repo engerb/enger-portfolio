@@ -4,10 +4,8 @@ import Content from './Content'
 import Components from './components/Components'
 import Page from './components/page'
 
-import useStore from './store/Store'
 
 export default () => {
-
     return (
         <Router>
             <Switch>

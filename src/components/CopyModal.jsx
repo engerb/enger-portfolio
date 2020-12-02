@@ -42,7 +42,7 @@ export default (props) => {
                 {document.queryCommandSupported('copy') &&
                     <div className={'copyButton'} onClick={copyToClipboard}>
                         {!copySuccess
-                            ? <h6>Copy text</h6>
+                            ? <h6>Copy text </h6>
                             : <h6>Copied! ✓</h6>
                         }
                     </div>

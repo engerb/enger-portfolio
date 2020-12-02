@@ -12,6 +12,7 @@
             .text {
                 flex-basis: 500px;
                 position: relative;
+                flex-flow: column;
 
                 .description, 
                 .goals {
@@ -23,6 +24,8 @@
 
         .text {
             display: flex;
+            flex-flow: row;
+            justify-content: space-between;
             
             .description {
                 width: 600px;

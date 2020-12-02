@@ -12,7 +12,7 @@ export default (props) => {
     useEffect(() => {
         if (props.page === 'home') {
             // could be better...
-            window.scrollTo(0, homePageScrollY + 200)
+            window.scrollTo(0, homePageScrollY ? homePageScrollY : 0)
         } else {
             window.scrollTo(0, 0)
         }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Components from './Components'
 import './SplitImage.scss'
 
 /**
@@ -17,6 +18,8 @@ import './SplitImage.scss'
     * bottomColor: optional, splits at image, default is white, or main bg of page
     * topColorHeight
     * bottomColorHeight
+    * html: optional, just raw jsx
+    * subComponent: more complex interactions
  */
 
 export default (props) => {
@@ -43,6 +46,12 @@ export default (props) => {
                 }
                 {props.img &&
                     <img src={props.img} />
+                }
+                {props.html &&
+                    props.html
+                }
+                {props.subComponent &&
+                    Components(props.subComponent)
                 }
                 {props.bottomText &&
                     <div className={`text bottom ${props.bottomTextWhite && 'white'}`}>

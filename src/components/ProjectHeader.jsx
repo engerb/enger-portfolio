@@ -37,9 +37,6 @@ export default (props) => {
                     {props.class === 'serve' &&
                         null //import serveModelViewer npm
                     }
-                    {props.class === 'wiivv' &&
-                        null //wiivv stuff
-                    }
                 </div>
             </div>
             <div ref={scrollRef} className={`textMain mainWidth mainPadding`}>

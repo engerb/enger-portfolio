@@ -2,9 +2,25 @@
 
 .SplitImage {
     position: relative;
-    background-size: cover;
+    background-size: 101% 101%;
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media only screen and (max-width: 1400px) {    
+        background-size: auto;
+    }
+
+    &.noPaddingTop {
+        .mainPadding {
+            padding-top: 0;
+        }
+    }
+
+    &.noPaddingBottom {
+        .mainPadding {
+            padding-bottom: 0;
+        }
+    }
 
     .topColor, 
     .bottomColor {
@@ -17,6 +33,22 @@
     .bottomColor {
         bottom: 0;
         top: unset;
+    }
+
+    &.centerText {
+        div {
+            .text {
+                text-align: center;
+            }
+        }
+    }
+
+    &.textWide {
+        div {
+            .text {
+                max-width: 900px;
+            }
+        }
     }
     
     div {
@@ -57,6 +89,38 @@
 
         img {
             width: 100%;
+        }
+    }
+
+    .awardsBox {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        padding: 75px 50px;
+        box-sizing: border-box;
+        display: block;
+
+        .awards {
+            margin-top: 30px;
+            display: flex;
+            flex-flow: row;
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+                margin-right: 25px;
+            }
+        }
+
+        h2 {
+            // text-align: left;
+        }
+
+        p {
+            // text-align: left;
         }
     }
 }

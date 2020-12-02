@@ -1,5 +1,76 @@
 @import '../_variables';
 
 .AlternatingContent {
-    
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 45px;
+        color: #525252;
+    }
+
+    .topText {
+        margin-bottom: 75px;
+    }
+
+    .alternatingContent {
+        
+        &.normalDir {
+            :nth-child(even) {
+                flex-direction: row-reverse;
+
+                .text {
+                    margin-left: 50px;
+                }
+            }
+
+            :nth-child(odd) {
+                flex-direction: row;
+
+                .text {
+                    margin-right: 50px;
+                }
+            }
+        }
+        
+        &.reversedDir {
+            :nth-child(even) {
+                flex-direction: row;
+
+                .text {
+                    margin-right: 50px;
+                }
+            }
+
+            :nth-child(odd) {
+                flex-direction: row-reverse;
+
+                .text {
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        .item {
+            display: flex;
+            position: relative;
+
+            .text {
+                margin-top: 50px;
+                // min-width: 40%;
+            }
+
+            .content {
+                // flex-basis: 100%;
+
+                img, video {
+                    width: 100%;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-top: 75px;
+            }
+        }
+    }
 }

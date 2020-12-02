@@ -7,6 +7,15 @@
         display: flex;
         position: relative;
 
+        &.reverse {
+            flex-direction: row-reverse;
+
+            svg {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
         h6 {
             margin-bottom: 10px;
         }
@@ -62,6 +71,17 @@
 
         svg {
             // ... color
+        }
+    }
+
+    &.white {
+        background-color: white;
+        color: black;
+
+        svg {
+            path {
+                stroke: black;
+            }
         }
     }
 }
