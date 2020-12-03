@@ -9,16 +9,15 @@ export default () => {
     return (
         <Router>
             <Switch>
-                <Route path='/serve'>
-                    <Page page={'serve'}>
-                        {Content.serve.map((block, indexKey) => Components(block, indexKey))}
-                    </Page>
-                </Route>
-                <Route path='/wiivv'>
-                    <Page page={'wiivv'}>
-                        {Content.wiivv.map((block, indexKey) => Components(block, indexKey))}
-                    </Page>
-                </Route>
+                {Object.keys(Content).map((key, i) => {
+                    if (key !== 'home') {
+                        return  <Route key={key} path={`/${key}`}>
+                            <Page page={key}>
+                                {Content[key].map((block, indexKey) => Components(block, indexKey))}
+                            </Page>
+                        </Route>
+                    }
+                })}
                 <Route path='/'>
                     <Page page={'home'}>
                         {Content.home.map((block, indexKey) => Components(block, indexKey))}

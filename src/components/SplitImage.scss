@@ -51,7 +51,7 @@
         }
     }
     
-    div {
+    .mainContent {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -92,35 +92,59 @@
         }
     }
 
-    .awardsBox {
-        width: 100%;
-        background-color: white;
-        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-        padding: 75px 50px;
-        box-sizing: border-box;
-        display: block;
+    .awardsBoxMain {
+        padding-top: 100px;
+        position: relative;
 
-        .awards {
-            margin-top: 30px;
-            display: flex;
-            flex-flow: row;
+        .awardBG {
+            position: absolute;
+            z-index: 99;
+            left: -300px;
+            top: -100px;
+            width: 708px;
+        }
 
-            a {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: #000000;
-                margin-right: 25px;
+        .awardFG {
+            position: absolute;
+            z-index: 101;
+            right: -140px;
+            bottom: -140px;
+            width: 280px;
+        }
+
+        .awardsBox {
+            width: 100%;
+            max-width: 910px;
+            background-color: white;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+            padding: 75px 50px;
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            z-index: 100;
+    
+            .awards {
+                margin-top: 30px;
+                display: flex;
+                flex-flow: row;
+    
+                a {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin-right: 25px;
+                }
             }
-        }
-
-        h2 {
-            // text-align: left;
-        }
-
-        p {
-            // text-align: left;
+    
+            h2 {
+                // text-align: left;
+            }
+    
+            p {
+                // text-align: left;
+            }
         }
     }
 }

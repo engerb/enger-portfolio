@@ -28,6 +28,10 @@ export default (props) => {
     const [modalCloseTransTimeout, SetModalCloseTransTimeout] = useState(null)
 
     const openFixedModal = (card) => {
+        if (modalOpen || modalClosing) {
+            return
+        }
+
         clearTimeout(modalCloseTransTimeout)
         setModalCard(card)
         setModalOpen(true)
@@ -87,8 +91,8 @@ export default (props) => {
                 </div>
             }
             
-            <div className={`${!props.nested && 'mainWidth mainPadding'}`}>
-                <div className={`cards`}>
+            <div className={`${!props.nested && 'mainWidth mainPadding'} cardsMain`}>
+                <div className={`cards ${(modalOpen && !modalClosing) && 'hide'}`}>
                     {props.cards && props.cards.map((card, i) => {
                         return <div key={i} className={`card ${props.class && props.class}`}>
                             {card.title && 

@@ -40,24 +40,24 @@
             .goals {
                 width: 400px;
 
-                ul {
-                    margin: 0;
-                    list-style: none;
-                    padding: 0;
+                // ul {
+                //     margin: 0;
+                //     list-style: none;
+                //     padding: 0;
 
-                    li {
-                        padding-left: 10px;
-                        font-size: 24px;
-                        line-height: 45px;
-                        color: #717171;
+                //     li {
+                //         padding-left: 10px;
+                //         font-size: 24px;
+                //         line-height: 45px;
+                //         color: #717171;
 
-                        &:before {
-                            content: '•';
-                            padding-right: 10px;
-                            color: #717171;
-                        }
-                    }
-                }
+                //         &:before {
+                //             content: '•';
+                //             padding-right: 10px;
+                //             color: #717171;
+                //         }
+                //     }
+                // }
             }
         }
 

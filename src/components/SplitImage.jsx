@@ -33,7 +33,7 @@ export default (props) => {
             {props.bottomColor &&
                 <div className={`bottomColor`} style={{backgroundColor: props.bottomColor, height: props.bottomColorHeight}}/>
             }
-            <div className={`mainWidth mainPadding`}>
+            <div className={`mainWidth mainPadding mainContent`}>
                 {props.topText &&
                     <div className={`text top ${props.topTextWhite && 'white'}`}>
                         {props.topText.map((text, i) => {

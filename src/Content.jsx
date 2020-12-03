@@ -522,15 +522,19 @@ const Content = {
             component: 'SplitImage',
             bottomColor: '#EAEBF0',
             bottomColorHeight: '50%',
-            html: <div className={`awardsBox`}>
-                <h3>Awards</h3> 
-                <p>In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live-app demo and we ended up taking home two awards:</p>
-                <div className={`awards`}>
-                    <a target={'_blank'} href={'https://medium.com/leotohyama/report-vancouver-user-experience-awards-2016-71cc7a4fa86b#a976'}>🥇 Best UX Overall</a>
-                    <a target={'_blank'} href={'https://medium.com/leotohyama/report-vancouver-user-experience-awards-2016-71cc7a4fa86b#5b68'}>🥇 Best UX for Product</a>
+            html: <div className={`awardsBoxMain`}>
+                <img className={`awardFG`} src={require('./assets/img/awardFG.png').default} />
+                <img className={`awardBG`} src={require('./assets/img/awardBG.png').default} />
+                <div className={`awardsBox`}>
+                    <h3>Awards</h3> 
+                    <p>In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live-app demo and we ended up taking home two awards:</p>
+                    <div className={`awards`}>
+                        <a target={'_blank'} href={'https://medium.com/leotohyama/report-vancouver-user-experience-awards-2016-71cc7a4fa86b#a976'}>🥇 Best UX Overall</a>
+                        <a target={'_blank'} href={'https://medium.com/leotohyama/report-vancouver-user-experience-awards-2016-71cc7a4fa86b#5b68'}>🥇 Best UX for Product</a>
+                    </div>
                 </div>
             </div>,
-            class: 'noPaddingTop',
+            // class: 'noPaddingTop',
         },
         {
             component: 'SplitImage',
@@ -558,25 +562,95 @@ const Content = {
                 cards: [
                     {
                         title: 'Custom insoles',
-                        img: require('./assets/img/wiivv_app_intro.png').default,
+                        img: require('./assets/img/cardInsole.png').default,
                         subText: 'Insoles taylor-made to your feet and lifestyle.',
                         content: <>
-                            
+                            <div className={`intro`}>
+                                <img className={`overflow`} src={require('./assets/img/hardwareInsoleMain.png').default} />
+                                <div className={`intoText`}>
+                                    <p>Our main product, a custom insole created from the measurements users took in our app.</p>
+                                    <p>I designed the insoles in Blender and created the tools to easily generate 3D printable designs.</p>
+                                    <ul>
+                                        <li>3D printed, flexible nylon-12 shell, fitted to the users measurements and optimized for comfort.</li>
+                                        <li>Custom poly-urethane foam with a micro-wicking fabric laminated to the top of the shell.</li>
+                                        <li>Shell colour and pattern chosen by user.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareInsole1.jpg').default} />
+                                <p>Insole production and final product. Each one made unique to their users chosen design and comfort needs. Special markings were used to help the production team track orders and assembly. The end users name was also added to the top and bottom of each pair.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareInsole2.jpg').default} />
+                                <p>First iteration of our insole product. This iteration helped us validate and start to understand what users preferred when it came to comfort. From this design, we decided that the heel cup was too high and that the forefoot did not need to be printed in nylon.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareInsole3.jpg').default} />
+                                <p>Tommy Europe, Linda Wong and Martha McCabe were amongst the first 100 users ranging from Canadian Olympic athletes, stunt actors, to everyday casual-users in a clinical trial to quantify comfort.</p>
+                            </div>
                         </>
                     },
                     {
                         title: 'Custom sandals',
-                        img: require('./assets/img/wiivv_app_intro.png').default,
+                        img: require('./assets/img/cardSandal.png').default,
                         subText: 'The most comfortable sandals made to your feet.',
                         content: <>
-                        
+                            <div className={`intro`}>
+                                <img className={`overflow`} src={require('./assets/img/hardwareSandalMain.png').default} />
+                                <div className={`intoText`}>
+                                    <p>The most comfortable sandal, made to you!</p>
+                                    <p>My main challenge was to figure out how to get a 3D printed arch to reliably fit into the product while still looking good and offering the same level of comfort for each user. </p>
+                                    <ul>
+                                        <li>The sandal is offered in feminine and masculine styling / sizing, although you are free to choose either.</li>
+                                        <li>Size is chosen from user measurements and the strap / 3d printed arch insert is also created custom to these.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareSandal1.jpg').default} />
+                                <p>My final design that worked best featured a lip that holds it in place, a gasket like section to seel the lip off from debris, an intentionally open cavity allowing compression and expulsion of debris and a flowing outer lip. It was the best of both worlds, functional and the most visually pleasing as well.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareSandal2.jpg').default} />
+                                <p>The 2nd to final iteration was close! We realized that it made more sense to separate sandal upper into 2 parts, allowing for a softer foot-bed. This would create a cavity that the arch could be inserted into.</p>
+                                <p>Although this was the closest, I learned that the users could feel the hard lip at the very edge pressing into their foot. This was made worse because the arch could not compress due to the side waterfall, necessary to keep it sealed from debris.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareSandal3.jpg').default} />
+                                <p>We took out the extensions and created only an arch insert this time. My best attempt was to secure it with mushroom like pegs into corresponding holes. This iteration was still not comfortable for users, the hard plastic under the foot could never be comfortable and the method i had chosen to secure the insert would pop out due to flex, no matter how much glue was used.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwareSandal4.jpg').default} />
+                                <p>Our first thinking was to have the 3D printed part to be much larger, holding a tow thong and to be exposed on the top. This required too much thickness in teh foot-bed, and provided no flexibility.</p>
+                            </div>
                         </>
                     },
                     {
                         title: 'Packaging',
-                        img: require('./assets/img/wiivv_app_intro.png').default,
+                        img: require('./assets/img/cardPackaging.png').default,
                         subText: 'Sustainable and functional packaging.',
                         content: <>
+                            <div className={`intro`}>
+                                <img className={``} src={require('./assets/img/hardwarePackagingMain.png').default} />
+                                <div className={`intoText`}>
+                                    <p>Like with other D2C products that primarily sell online and through apps (Casper, Tushy, Care/of, BOTM, etc), we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape.</p>
+                                    <ul>
+                                        <li>Packaging should to be sustainable, yet durable and shippable.</li>
+                                        <li>The concept of a tailored experience was brought into the package such as printing their names and signing each package card. </li>
+                                        <li>Out-of-box experience needed to be informative with care and how-to information.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwarePackaging1.jpg').default} />
+                                <p>Previous iteration of packaging. Was informative and met many legal requirements where we were to ship our products too. A card had unique printing of the users name, and each one was signed with a promise of quality assurance.</p>
+                                <p>The only issue with this design was that it was wasteful. We could not ship the box, it needed to go into an additional “shipper” much like how you would receive goods form Amazon. And each one needed to be assembled and stored on the manufacturing store with many parts. Our final iteration after that was a simple biodegradable resealable pouch that could be directly shipped as well, saving valuable production resources, space while being more sustainable.</p>
+                            </div>
+                            <div className={`imageSection`}>
+                                <img src={require('./assets/img/hardwarePackaging2.jpg').default} />
+                                <p>The first iteration of our packaging. We only had a 3/4 length insole product at that time. This box was used to ship out all of our Kickstarter orders, features a printed sticker with the users name and the details of the order, as well as a helpful wearing-and-caring tri-fold. The design was fun, but a bit too quirky and the box needed to be more simple and ridged to survive shipping.</p>
+                            </div>
                         </>
                     }
                 ]

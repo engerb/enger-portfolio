@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 const path = require('path');
 
+const CompressionPlugin = require("compression-webpack-plugin");
 const imageminGifsicle = require("imagemin-gifsicle");
 const imageminPngquant = require("imagemin-pngquant");
 const imageminSvgo = require("imagemin-svgo");
@@ -84,5 +85,6 @@ module.exports = {
             filename: './index.html',
             favicon: './src/assets/img/favicon.png'
         }),
+        new CompressionPlugin(),
     ]
 };
