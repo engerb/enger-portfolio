@@ -5,9 +5,19 @@
     background-size: 101% 101%;
     background-repeat: no-repeat;
     background-position: top center;
+    overflow: hidden;
 
     @media only screen and (max-width: 1400px) {    
         background-size: auto;
+        background-position: center center;
+
+        &.backgroundTop {
+            background-position: top center;
+        }
+
+        &.backgroundBottom {
+            background-position: bottom center;
+        }
     }
 
     &.noPaddingTop {
@@ -63,13 +73,23 @@
             position: relative;
 
             * {
-                width: 100%;
+                // width: 100%;
             }
 
             p {
                 font-size: 24px;
                 line-height: 45px;
                 color: #525252;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    font-size: 24px;
+                    line-height: 45px;
+                    color: #525252;
+                }
             }
 
             &.white {
@@ -87,8 +107,50 @@
             }
         }
 
-        img {
+        .mainImage {
             width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .overlayImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    &.wiivvWebsiteOverlay {
+        .mainImage {
+            .overlayImg {
+                transform-origin: top center;
+                animation: wiivvWebsiteOverlayAnimation 10s infinite;
+                @keyframes wiivvWebsiteOverlayAnimation {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                    5% {
+                        opacity: 1;
+                        transform: translateY(0) scaleY(1);
+                    }
+                    50% {
+                        opacity: 1;
+                        transform: translateY(0) scaleY(1);
+                    }
+                    55% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                }
+            }
         }
     }
 

@@ -9,6 +9,10 @@
         max-height: 1200px;
         height: 100vh;
         overflow: hidden;
+
+        @media only screen and (max-width: 950px) {    
+            height: auto;
+        }
     }
 
     .text {
@@ -40,6 +44,10 @@
         transform: translateX(-50%);
         position: absolute;
         top: 100px;
+
+        @media only screen and (max-width: 950px) {    
+            display: none;
+        }
 
         video, img {
             position: absolute;

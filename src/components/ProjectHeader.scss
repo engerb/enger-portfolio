@@ -107,26 +107,44 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px;
+
+            @media only screen and (max-width: 900px) {    
+                display: block;
+            }
         
             h1 {
                 max-width: 500px;
 
-                // media q
+                @media only screen and (max-width: 900px) {    
+                    max-width: 100%;
+                }
             }
 
             h3 {
                 max-width: 500px;
 
-                // media q
+                @media only screen and (max-width: 900px) {    
+                    max-width: 100%;
+                }
             }
         }
 
         .stats {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width: 900px) {    
+                display: block;
+            }
 
             div {
                 max-width: 200px;
+
+                @media only screen and (max-width: 900px) {    
+                    max-width: 300px;
+                    margin-bottom: 30px;
+                }
                 
                 h5 {
                     white-space: nowrap;

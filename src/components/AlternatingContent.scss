@@ -21,6 +21,10 @@
 
                 .text {
                     margin-left: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-left: 0;
+                    }
                 }
             }
 
@@ -29,6 +33,10 @@
 
                 .text {
                     margin-right: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -39,6 +47,10 @@
 
                 .text {
                     margin-right: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-right: 0;
+                    }
                 }
             }
 
@@ -47,6 +59,10 @@
 
                 .text {
                     margin-left: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-left: 0;
+                    }
                 }
             }
         }
@@ -55,9 +71,17 @@
             display: flex;
             position: relative;
 
+            @media only screen and (max-width: 950px) {    
+                display: block;
+            }
+
             .text {
                 margin-top: 50px;
                 // min-width: 40%;
+
+                @media only screen and (max-width: 950px) {    
+                    margin-bottom: 40px;
+                }
             }
 
             .content {

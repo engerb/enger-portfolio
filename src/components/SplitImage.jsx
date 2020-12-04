@@ -45,7 +45,12 @@ export default (props) => {
                     </div>
                 }
                 {props.img &&
-                    <img src={props.img} />
+                    <div className={`mainImage`}>
+                        <img src={props.img} />
+                        {props.overlayIMG &&
+                            <img className={`overlayImg`} src={props.overlayIMG} />
+                        }
+                    </div>
                 }
                 {props.html &&
                     props.html

@@ -294,7 +294,7 @@ const Content = {
                     ],
                     content: {
                         width: '40%',
-                        img: require('./assets/img/placeholderNormal.png').default,
+                        video: require('./assets/video/cmf_med.mp4').default,
                     }
                 },
             ]
@@ -403,7 +403,7 @@ const Content = {
         {
             component: 'SplitImage',
             id: 'app',
-            class: 'noPaddingTop',
+            class: 'noPaddingTop backgroundBottom',
             bottomText: [ 
                 <h2>Measurement app</h2>, 
                 <p>A mobile app allowing users to take their measurements, learn about their feet and purchase our customized footwear.</p>
@@ -430,7 +430,7 @@ const Content = {
                         {
                             content: {
                                 width: '100%',
-                                img: require('./assets/img/placeholderWide.png').default,
+                                img: require('./assets/img/app1.png').default,
                             }
                         },
                         {
@@ -444,7 +444,7 @@ const Content = {
                             ],
                             content: {
                                 width: '40%',
-                                img: require('./assets/img/placeholderNormal.png').default,
+                                img: require('./assets/img/painPoints.png').default,
                             }
                         },
                     ]
@@ -467,7 +467,7 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/placeholderNormal.png').default,
+                                img: require('./assets/img/nonLinear.png').default,
                             }
                         },
                         {
@@ -477,7 +477,7 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/placeholderNormal.png').default,
+                                img: require('./assets/img/tutorialSlider.png').default,
                             }
                         },
                     ]
@@ -501,17 +501,17 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/placeholderNormal.png').default,
+                                img: require('./assets/img/orderMatters.png').default,
                             }
                         },
                         {
                             text: [
                                 <h3>Deep-learning driven experience</h3>, 
-                                <p>What’s better than giving instructions on how to take a good photo? Why not guide them through each step with the help of computer-vision! My design helped increase acur... (how I used)</p>
+                                <p>What’s better than giving instructions on how to take a good photo? Why not guide them through each step with the help of computer-vision! My design helped increase accuracy of measurements. Users I tested also felt that the process was more trustworthy as they have visibility into the technology and reassurance that it was working.</p>
                             ],
                             content: {
                                 width: '40%',
-                                img: require('./assets/img/placeholderNormal.png').default,
+                                img: require('./assets/img/cvCapture.png').default,
                             }
                         },
                     ]
@@ -534,23 +534,30 @@ const Content = {
                     </div>
                 </div>
             </div>,
-            // class: 'noPaddingTop',
         },
         {
             component: 'SplitImage',
             id: 'website',
-            class: 'textWide',
+            class: 'textWide wiivvWebsiteOverlay backgroundTop',
             topText: [ 
                 <h2>Website</h2>, 
-                <p>As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product became more important.</p>
+                <p>As our product offerings expanded and got way cooler, having a richer web experience where you can customize, order and learn about the product became more important.</p>,
             ],
-            img: require('./assets/img/wiivv_app_intro.png').default,
+            bottomText: [
+                <p>A few of my main contributions to the web design / experience were:</p>,
+                <ul>
+                    <li>An expanding product nav-bar, which tested best with users in finding a product that fit their needs.</li>
+                    <li>Messaging tested around clarity and credibility as well as understanding the process.</li>
+                </ul>
+            ],
+            img: require('./assets/img/wiivv_website_intro.png').default,
+            overlayIMG: require('./assets/img/wiivv_website_overlay.png').default,
             backgroundImage: require('./assets/img/wiivvWaveGrey.svg').default,
         },
         {
             component: 'SplitImage',
             id: 'hardware',
-            class: 'centerText textWide noPaddingBottom',
+            class: 'centerText textWide noPaddingBottom backgroundTop',
             topText: [ 
                 <h2>Hardware product design</h2>, 
                 <p>The website and app help get your measurements to build your product. I was the principle designer for the main insole product and made large contributions to the sandal and package experiences as well.</p>
