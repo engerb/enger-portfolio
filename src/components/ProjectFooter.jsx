@@ -37,7 +37,7 @@ export default (props) => {
                                 }
                             </video>
                         } else if (item.img) {
-
+                            return <img src={item.img} key={i} style={{width: item.width, top: item.top, left: item.left, bottom: item.bottom, right: item.right}} /> 
                         }
                     })}
                 </div>

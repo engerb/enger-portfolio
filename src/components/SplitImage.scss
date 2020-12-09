@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
+    // overflow-x: hidden;
 
     @media only screen and (max-width: 1400px) {    
         background-size: auto;
@@ -157,6 +158,7 @@
     .awardsBoxMain {
         padding-top: 100px;
         position: relative;
+        margin-bottom: 50px;
 
         .awardBG {
             position: absolute;
@@ -189,6 +191,10 @@
                 margin-top: 30px;
                 display: flex;
                 flex-flow: row;
+
+                @media only screen and (max-width: 950px) {    
+                    display: inline;
+                }
     
                 a {
                     font-style: normal;
@@ -197,6 +203,11 @@
                     line-height: 22px;
                     color: #000000;
                     margin-right: 25px;
+
+                    @media only screen and (max-width: 950px) {    
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
                 }
             }
     

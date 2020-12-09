@@ -2,12 +2,15 @@
 
 .TabbedContent {
     position: relative;
+    width: 100vw;
 
     .navBar {
         position: relative;
         display: flex;
         flex-flow: row;
         transform: translateY(-2px);
+        width: 100vw;
+        overflow: hidden;
 
         &.fixed {
             position: sticky;
@@ -43,6 +46,12 @@
                         font-size: 36px;
                         line-height: 44px;
                         opacity: 1;
+
+                        @media only screen and (max-width: 750px) {    
+                            font-size: 32px;
+                            line-height: 32px;
+                            margin-bottom: 40px;
+                        }
                     }
 
                     &.tick {
@@ -60,6 +69,11 @@
                     opacity: 0.8;
                     margin: 0;
                     transition: all 200ms ease-in-out;
+
+                    @media only screen and (max-width: 750px) {    
+                        font-size: 30px;
+                        line-height: 32px;
+                    }
                 }
             }
         }

@@ -37,10 +37,12 @@
             
             .description {
                 width: 600px;
+                margin-right: 50px;
 
                 @media only screen and (max-width: 950px) {    
                     width: 100%;
-                    margin-bottom: 40px;
+                    margin-right: 0;
+                    margin-bottom: 50px;
                 }
 
                 p {
@@ -52,6 +54,10 @@
 
             .goals {
                 width: 400px;
+
+                @media only screen and (max-width: 950px) {    
+                    width: 100%;
+                }
 
                 // ul {
                 //     margin: 0;

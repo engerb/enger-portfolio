@@ -94,7 +94,8 @@ const Content = {
             text: [
                 <p>Hello! Thanks for checking out my work!</p>,
                 <p>I started out learning 3D design back in 2005. I also built games and websites in my free time. I went to school for 3D Design in 2011 and was eventually  drawn into  product design. I enjoy keeping up with the latest design trends, dev libraries and coolest hardware, but being able to connect the dots and build something people want is the most exciting part.</p>,
-                <p>I'm passionate about working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product. </p>,
+                <p>I'm passionate about working on the most challenging and undefined products, with cool people. Right now that's the X team at Postmates building our robot product.</p>,
+                
             ],
             buttons: [
                 {
@@ -216,17 +217,17 @@ const Content = {
                     ],
                     content: {
                         width: '40%',
-                        img: require('./assets/img/placeholderNormal.png').default,
+                        video: require('./assets/video/LED_small.mp4').default,
                     }
                 },
                 {
                     text: [
                         <h3>Sound design</h3>, 
-                        <p>Communicating intent through sound can be difficult. I created a python script that conveys the rovers speed into a modulated sound so that people would be made aware of it's speed and positions.</p>
+                        <p>Communicating intent through sound can be difficult. I created a prototype python script that conveys the rovers speed into a modulated sound so that people would be made aware of it's speed and positions.</p>
                     ],
                     content: {
-                        width: '40%',
-                        img: require('./assets/img/placeholderNormal.png').default,
+                        width: '50%',
+                        img: require('./assets/img/runningSound.png').default,
                     }
                 },
                 {
@@ -235,8 +236,8 @@ const Content = {
                         <p>I designed motion strategies that use 4 wheels and car like steering to better communicate Serve's intent to pedestrians.</p>
                     ],
                     content: {
-                        width: '40%',
-                        img: require('./assets/img/placeholderNormal.png').default,
+                        width: '50%',
+                        img: require('./assets/img/movement.png').default,
                     }
                 },
             ]
@@ -251,8 +252,8 @@ const Content = {
                         <p>Most importantly, people need to get their food from Serve. I designed and developed the touchscreen experience which tested well with users. </p>
                     ],
                     content: {
-                        width: '40%',
-                        img: require('./assets/img/placeholderNarrow.png').default,
+                        width: '35%',
+                        video: require('./assets/video/screenApp_small.mp4').default,
                     }
                 }
             ]
@@ -265,7 +266,7 @@ const Content = {
                 <h1>Driving Serve</h1>, 
                 <p>Autonomous vehicles sometimes need help, even more so when navigating a sidewalk with no lanes. I designed a tele-ops interface that allows our fleet of Serves to be monitored by just a couple people. Intervening if necessary.</p>
             ],
-            img: require('./assets/img/placeholderWide.png').default,
+            img: require('./assets/img/pilotUI.jpg').default,
             topTextWhite: true,
             backgroundColor: 'black',
         },
@@ -279,12 +280,12 @@ const Content = {
             alternatingContent: [
                 {
                     text: [
-                        <h3>Food storage in Serve</h3>, 
-                        <p>I modeled various designs and 3D prints that were tested against different food configurations. The design that tested best had two cupholders and an offset pizza shelf. This allowed many order combinations to securely fit during deliveries.</p>
+                        <h3>Secure food storage</h3>, 
+                        <p>I modeled various designs and 3D prints that were tested against different food configurations. The design that tested best had two cupholders and an offset pizza shelf. This allowed many food combinations to securely fit during deliveries.</p>
                     ],
                     content: {
-                        width: '40%',
-                        img: require('./assets/img/placeholderNormal.png').default,
+                        width: '50%',
+                        img: require('./assets/img/cargo.png').default,
                     }
                 },
                 {
@@ -293,8 +294,8 @@ const Content = {
                         <p>When people see a Serve, they instantly recognize our brand. I created a web tool that allowed us to quickly explore new designs and whether they fit our brand.</p>
                     ],
                     content: {
-                        width: '40%',
-                        video: require('./assets/video/cmf_med.mp4').default,
+                        width: '50%',
+                        img: require('./assets/img/cmf.png').default,
                     }
                 },
             ]
@@ -310,43 +311,43 @@ const Content = {
             backgroundImage: require('./assets/img/serveFooterBG.png').default,
             collage: [
                 {
-                    video: require('./assets/video/placeholder.mp4').default,
+                    video: require('./assets/video/crossing_320.mp4').default,
                     width: '300px',
                     top: '10px',
                     left: '-100px'
                 },
                 {
-                    video: require('./assets/video/placeholder.mp4').default,
-                    width: '180px',
-                    top: '500px',
-                    left: '300px'
-                },
-                {
-                    video: require('./assets/video/placeholder.mp4').default,
-                    width: '250px',
-                    top: '320px',
-                    left: '100px'
-                },
-                {
-                    video: require('./assets/video/placeholder.mp4').default,
+                    img: require('./assets/img/serveCostume.jpg').default,
                     width: '130px',
                     top: '600px',
                     left: '0'
                 },
                 {
-                    video: require('./assets/video/placeholder.mp4').default,
+                    video: require('./assets/video/dayBuyer_320.mp4').default,
+                    width: '250px',
+                    top: '320px',
+                    left: '100px'
+                },
+                {
+                    img: require('./assets/img/serveIntersection.jpg').default,
+                    width: '180px',
+                    top: '500px',
+                    left: '300px'
+                },
+                {
+                    video: require('./assets/video/dayMerchant_320.mp4').default,
                     width: '200px',
                     top: '10px',
                     right: '-100px'
                 },
                 {
-                    video: require('./assets/video/placeholder.mp4').default,
+                    video: require('./assets/video/nightMerchantPizza_320.mp4').default,
                     width: '250px',
                     top: '320px',
                     right: '0'
                 },
                 {
-                    video: require('./assets/video/placeholder.mp4').default,
+                    img: require('./assets/img/serveDancer.jpg').default,
                     width: '200px',
                     top: '285px',
                     right: '200px'

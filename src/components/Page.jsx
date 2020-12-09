@@ -30,6 +30,7 @@ export default (props) => {
             {copyModal.open &&
                 <CopyModal />
             }
+            {/* <p className={`legalStuff`}>All images and concepts shown are my work, and/or work that is within the public. Otherwise, are generalized and simulated to protect privacy and/or intellectual property.</p> */}
             {props.children}
         </>
     )
