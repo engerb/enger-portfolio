@@ -4,6 +4,39 @@
     &.serve {
         color: white;
         background-color: black;
+
+        .demoMain {
+            background-image: url('../assets/img/serveBG.jpg');
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+
+            &:after {
+                content: '';
+                display: block;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                max-height: 900px;
+                width: 100%;
+                position: absolute;
+                background-image: url('../assets/img/serveTop.png');
+                background-position: center;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                pointer-events: none;
+            }
+
+            @media only screen and (max-width: $widthTablet) {    
+                background-image: url('../assets/img/serveMobile.jpg');
+                // background-repeat: repeat-x;
+                background-size: contain;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
     }
     
     &.wiivv {

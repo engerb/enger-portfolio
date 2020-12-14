@@ -148,7 +148,6 @@ const Content = {
         {
             component: 'ProjectHeader',
             class: 'serve',
-            backgroundComponent: 'ServeViewer',
             title: <h1>Serve: The autonomous delivery robot.</h1>,
             subTitle: <h3>Safely navigates sidewalks today delivering food from restaurants to your door.</h3>,
             stats: {
@@ -359,7 +358,6 @@ const Content = {
         {
             component: 'ProjectHeader',
             class: 'wiivv',
-            backgroundComponent: 'WiivvContent',
             title: <h1>Dr. Scholl's &#38; Wiivv</h1>,
             subTitle: <h3>The right size, from your phone.</h3>,
             stats: {
