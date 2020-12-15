@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import useStore from '../store/Store'
 import CopyModal from './CopyModal'
 
@@ -10,6 +10,8 @@ export default (props) => {
     const closeCopyModal = useStore(state => state.closeCopyModal)
 
     useEffect(() => {
+        props.analytics(window.location)
+
         if (props.page === 'home') {
             // could be better...
             window.scrollTo(0, homePageScrollY ? homePageScrollY : 0)
