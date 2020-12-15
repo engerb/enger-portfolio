@@ -11,7 +11,6 @@ import './ProjectIntro.scss'
  */
 
 export default (props) => {
-
     return (
         <section id={`${props.id ? props.id : ''}`} className={`${props.className} ${props.class ? props.class : ''}`}>
             <div className={`mainWidth mainPadding ${props.img && 'imgLayout'}`}>

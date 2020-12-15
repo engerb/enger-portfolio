@@ -41,11 +41,14 @@ module.exports = {
                             }),
                             imageminMozjpeg({
                                 progressive: true,
-                                arithmetic: false
+                                arithmetic: false,
+                                quality: 70
                             }),
                             imageminPngquant({
                                 floyd: 0.5,
-                                speed: 2
+                                speed: 2,
+                                strip: true,
+                                quality: [0.3, 0.5]
                             }),
                             imageminSvgo({
                                 plugins: [

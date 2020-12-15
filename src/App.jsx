@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ReactGA from 'react-ga'
 import Content from './Content'
@@ -11,8 +11,14 @@ export default () => {
     const analytics = (location) => {
         ReactGA.set({ page: location.pathname })
         ReactGA.pageview(location.pathname)
-        console.log(location.pathname)
     }
+
+    // Preload some important images
+    useEffect(() => {
+        Content.preLoad.forEach((picture) => {
+            new Image().src = picture.fileName
+        })
+    }, [])
 
     return (
         <Router>

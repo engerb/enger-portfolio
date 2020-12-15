@@ -2,6 +2,22 @@ import React from 'react';
 import TalkBubbleMaskRight from './components/talkBubbleMaskRight';
 
 const Content = {
+    preLoad: [
+        require('./assets/img/serveBG.jpg').default, 
+        require('./assets/img/serveTop.png').default, 
+        require('./assets/img/serveMobile.jpg').default,
+        require('./assets/img/wiivvHeaderBG.jpg').default, 
+        require('./assets/img/wiivvHeaderoverlay.svg').default, 
+        require('./assets/img/wiivvHeaderMobile.jpg').default,
+        require('./assets/img/CountdownFeatures_2_1.svg').default,
+        require('./assets/img/CountdownFeatures_2_2.png').default,
+        require('./assets/img/CountdownFeatures_2_3.png').default,
+        require('./assets/img/CountdownFeatures_2_4.png').default,
+        require('./assets/img/CountdownFeatures_3_1.svg').default,
+        require('./assets/img/CountdownFeatures_3_2.png').default,
+        require('./assets/img/CountdownFeatures_3_3.png').default,
+        require('./assets/img/CountdownFeatures_3_4.png').default,
+    ],
     home: [
         {
             component: 'Header',
@@ -73,7 +89,7 @@ const Content = {
                 },
                 {
                     title: <h5>Dev work</h5>,
-                    text: <p>Web-dev, real prototypes, and even C code for embedded systems.</p>,
+                    text: <p>Web-dev, live prototypes, and even C code for embedded systems.</p>,
                     visuals: [
                         require('./assets/img/CountdownFeatures_3_1.svg').default,
                         require('./assets/img/CountdownFeatures_3_2.png').default,
@@ -194,7 +210,7 @@ const Content = {
             component: 'SplitImage',
             topText: [
                 <h3>Meet Serve</h3>, 
-                <p>After testing concepts with online surveys and cardboard models, we landed on Serve. Most people intuitively understood where the "front" was, it's face, and how to interact with it.</p>
+                <p>After testing concepts with online surveys and cardboard models, we landed on Serve. Most people intuitively understood where the "front" was, the face, and how to interact with it.</p>
             ],
             img: require('./assets/img/serve_progress.png').default,
             bottomColor: '#EAEBF0',
@@ -212,7 +228,7 @@ const Content = {
                 {
                     text: [
                         <h3>Lighting design</h3>, 
-                        <p>For the eyes and strip, I soldered together a hardware prototype created the animations that run on the micro-controller.</p>
+                        <p>For the eyes and strip, I soldered together a hardware prototype and created the animations that run on the micro-controller.</p>
                     ],
                     content: {
                         width: '40%',
@@ -667,7 +683,7 @@ const Content = {
             component: 'ProjectFooter',
             text: [
                 <h3>Thanks for reading!</h3>, 
-                <p>Although we never did end up becoming the solution to online shoe retail, we were still able to offer a unique experience tailored to each person, solve a real problem, and taught me valuable skills.</p>
+                <p>Although we never did end up becoming the solution to online shoe retail, we were still able to offer a unique experience tailored to each person, solved real problems, and taught me valuable skills.</p>
             ],
             backgroundColor: '#235EAA',
             textColor: 'white'
