@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from './Image'
 import './AlternatingContent.scss'
 
 /**
@@ -55,12 +54,12 @@ export default (props) => {
                                         })}
                                     </div>
                                 }
-                                <div className={`content`} style={{minWidth: item.content.width ? item.content.width : '40%'}}> {/*style={{flexBasis: item.content.width ? item.content.width : '50%'}}>*/}
+                                <div className={`content`} style={{minWidth: item.content.width ? item.content.width : '40%'}}>
                                     {item.content.img &&
                                         <img className={`${item.content.class ? item.content.class : ''}`} src={item.content.img} />
                                     }
                                     {item.content.video &&
-                                        <video poster={item.content.videoImg ? item.content.videoImg : ''} className={`${item.content.class ? item.content.class : ''}`} autoPlay loop muted>
+                                        <video poster={item.content.videoImg ? item.content.videoImg : ''} className={`${item.content.class ? item.content.class : ''}`} autoPlay loop muted playsInline>
                                             <source src={item.content.video} type='video/mp4' />
                                             {item.content.videoImg &&
                                                 <img src={item.content.videoImg} />   

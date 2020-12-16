@@ -105,6 +105,25 @@ ul {
     }
 }
 
+.pi {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    opacity: 0.8;
+    cursor: pointer;
+
+    &.serve {
+        svg {
+            path {
+                fill: grey;
+            }
+        }
+    }
+}
+
 .mainWidth {
     max-width: 1100px;
     margin-right: auto;

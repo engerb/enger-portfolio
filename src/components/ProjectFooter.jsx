@@ -30,7 +30,7 @@ export default (props) => {
                 <div className={`collage`}>
                     {props.collage.map((item, i) => {
                         if (item.video) {
-                            return <video key={i} poster={item.img ? item.img : ''} autoPlay loop muted style={{width: item.width, top: item.top, left: item.left, bottom: item.bottom, right: item.right}}>
+                            return <video key={i} poster={item.img ? item.img : ''} autoPlay loop muted style={{width: item.width, top: item.top, left: item.left, bottom: item.bottom, right: item.right}} playsInline>
                                 <source src={item.video} type='video/mp4' />
                                 {item.img &&
                                     <img src={item.img} />   

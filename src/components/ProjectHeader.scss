@@ -6,35 +6,14 @@
         background-color: black;
 
         .demoMain {
-            background-image: url('../assets/img/serveBG.jpg');
+            background-image: url('../assets/img/serveBG.webp');
             background-position: center;
             background-size: auto 100%;
             background-repeat: no-repeat;
 
-            &:after {
-                content: '';
-                display: block;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                max-height: 900px;
-                width: 100%;
-                position: absolute;
-                background-image: url('../assets/img/serveTop.png');
-                background-position: center;
-                background-size: auto 100%;
-                background-repeat: no-repeat;
-                pointer-events: none;
-            }
-
             @media only screen and (max-width: $widthTablet) {    
-                background-image: url('../assets/img/serveMobile.jpg');
-                // background-repeat: repeat-x;
+                background-image: url('../assets/img/serveBGMobile.webp');
                 background-size: contain;
-
-                &:after {
-                    display: none;
-                }
             }
         }
     }
@@ -44,35 +23,15 @@
         background-color: #235EAA;
 
         .demoMain {
-            background-image: url('../assets/img/wiivvHeaderBG.jpg');
+            background-image: url('../assets/img/wiivvBG.webp');
             background-position: center;
             background-size: auto 100%;
             background-repeat: no-repeat;
 
-            &:after {
-                content: '';
-                display: block;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                max-height: 900px;
-                width: 100%;
-                position: absolute;
-                background-image: url('../assets/img/wiivvHeaderoverlay.svg');
-                background-position: center;
-                background-size: auto 100%;
-                background-repeat: no-repeat;
-                pointer-events: none;
-            }
-
             @media only screen and (max-width: $widthTablet) {    
-                background-image: url('../assets/img/wiivvHeaderMobile.jpg');
+                background-image: url('../assets/img/wiivvBGMobile.webp');
                 background-repeat: repeat-x;
                 background-size: contain;
-
-                &:after {
-                    display: none;
-                }
             }
         }
 

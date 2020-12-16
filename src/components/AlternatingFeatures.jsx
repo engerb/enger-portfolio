@@ -11,14 +11,14 @@ export default (props) => {
                     return <div key={indexKey} className={`demoMain ${feature.class}`}>
                         <div className={`demo`}>
                             {feature.mask && <feature.mask maskID={'mask' + indexKey} key={'mask' + indexKey} />}
-                            <div className={`shadow`} style={{clipPath: 'url(#mask' + indexKey + ')'}} />
+                            <div className={`shadow`} style={feature.mask && {clipPath: 'url(#mask' + indexKey + ')'}} />
                             {feature.demo.img &&
-                                <div className={`img`} style={{backgroundImage: 'url(' + feature.demo.img + ')', clipPath: 'url(#mask' + indexKey + ')'}}>
+                                <div className={`img`} style={Object.assign({backgroundImage: 'url(' + feature.demo.img + ')'}, feature.mask && {clipPath: 'url(#mask' + indexKey + ')'})}>
                                     {feature.demo.video && <div></div>}
                                 </div>
                             }
                             {feature.demo.video && 
-                                <video poster={feature.demo.img ? feature.demo.img : ''} autoPlay loop muted style={{clipPath: 'url(#mask' + indexKey + ')'}}>
+                                <video poster={feature.demo.img ? feature.demo.img : ''} autoPlay loop muted style={feature.mask && {clipPath: 'url(#mask' + indexKey + ')'}} playsInline>
                                     <source src={feature.demo.video} type='video/mp4' />
                                     {feature.demo.img &&
                                         <img src={feature.demo.img} />   

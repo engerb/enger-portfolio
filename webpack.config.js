@@ -1,12 +1,13 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
-const path = require('path');
+const path = require('path')
 
-const CompressionPlugin = require("compression-webpack-plugin");
-const imageminGifsicle = require("imagemin-gifsicle");
-const imageminPngquant = require("imagemin-pngquant");
-const imageminSvgo = require("imagemin-svgo");
-const imageminMozjpeg = require('imagemin-mozjpeg');
+const CompressionPlugin = require('compression-webpack-plugin')
+const imageminGifsicle = require('imagemin-gifsicle')
+const imageminPngquant = require('imagemin-pngquant')
+const imageminSvgo = require('imagemin-svgo');
+const imageminMozjpeg = require('imagemin-mozjpeg')
 
 module.exports = {
     module: {
@@ -27,7 +28,7 @@ module.exports = {
             use: ['@svgr/webpack'],
         },
         {
-            test: /\.(png|svg|jpg|gif|glb|hdr|zip|pdf|mp4)$/,
+            test: /\.(png|svg|jpg|gif|glb|hdr|zip|pdf|mp4|webp|mp3)$/,
             use: [
                 {
                     loader: 'file-loader'
@@ -89,5 +90,11 @@ module.exports = {
             favicon: './src/assets/img/favicon.png'
         }),
         new CompressionPlugin(),
+        new CopyPlugin({
+            patterns: [
+                { from: 'CNAME', to: '' },
+                { from: 'src/.htaccess', to: '' },
+            ],
+        }),
     ]
-};
+}

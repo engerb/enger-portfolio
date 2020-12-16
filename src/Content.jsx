@@ -2,22 +2,6 @@ import React from 'react';
 import TalkBubbleMaskRight from './components/talkBubbleMaskRight';
 
 const Content = {
-    preLoad: [
-        require('./assets/img/serveBG.jpg').default, 
-        require('./assets/img/serveTop.png').default, 
-        require('./assets/img/serveMobile.jpg').default,
-        require('./assets/img/wiivvHeaderBG.jpg').default, 
-        require('./assets/img/wiivvHeaderoverlay.svg').default, 
-        require('./assets/img/wiivvHeaderMobile.jpg').default,
-        require('./assets/img/CountdownFeatures_2_1.svg').default,
-        require('./assets/img/CountdownFeatures_2_2.png').default,
-        require('./assets/img/CountdownFeatures_2_3.png').default,
-        require('./assets/img/CountdownFeatures_2_4.png').default,
-        require('./assets/img/CountdownFeatures_3_1.svg').default,
-        require('./assets/img/CountdownFeatures_3_2.png').default,
-        require('./assets/img/CountdownFeatures_3_3.png').default,
-        require('./assets/img/CountdownFeatures_3_4.png').default,
-    ],
     home: [
         {
             component: 'Header',
@@ -29,9 +13,9 @@ const Content = {
                 action: 'scrollTo'
             },
             img: [
-                require('./assets/img/img1.jpg').default,
-                require('./assets/img/img2.jpg').default,
-                require('./assets/img/img3.jpg').default
+                require('./assets/img/img1.webp').default,
+                require('./assets/img/img2.webp').default,
+                require('./assets/img/img3.webp').default
             ]
         },
         {
@@ -46,7 +30,7 @@ const Content = {
                     mask: TalkBubbleMaskRight,
                     demo: {
                         video: require('./assets/video/serve_homepage_video_reduced.mp4').default,
-                        img: require('./assets/img/featureServe.jpg').default,
+                        img: require('./assets/img/featureServe.webp').default,
                     }
                 },
                 {
@@ -55,10 +39,10 @@ const Content = {
                     class: 'wiivv',
                     href: '/wiivv',
                     demo: {
-                        img: require('./assets/img/featureWiivv.jpg').default,
+                        img: require('./assets/img/featureWiivv.webp').default,
                     },
                     overlayImage: {
-                        img: require('./assets/img/overlayWiivv.png').default,
+                        img: require('./assets/img/overlayWiivv.webp').default,
                         class: 'overlayWiivv'
                     }
                 }
@@ -73,8 +57,8 @@ const Content = {
                     text: <p>From logic flows, prototypes to UI design, design-systems and dev handoffs.</p>,
                     visuals: [
                         require('./assets/img/CountdownFeatures_1_1.svg').default,
-                        require('./assets/img/CountdownFeatures_1_2.png').default,
-                        require('./assets/img/CountdownFeatures_1_3.png').default,
+                        require('./assets/img/CountdownFeatures_1_2.webp').default,
+                        require('./assets/img/CountdownFeatures_1_3.webp').default,
                     ]
                 },
                 {
@@ -82,9 +66,9 @@ const Content = {
                     text: <p>Laser cut and 3D printed prototypes all the way to finished product along with packaging.</p>,
                     visuals: [
                         require('./assets/img/CountdownFeatures_2_1.svg').default,
-                        require('./assets/img/CountdownFeatures_2_2.png').default,
-                        require('./assets/img/CountdownFeatures_2_3.png').default,
-                        require('./assets/img/CountdownFeatures_2_4.png').default,
+                        require('./assets/img/CountdownFeatures_2_2.webp').default,
+                        require('./assets/img/CountdownFeatures_2_3.webp').default,
+                        require('./assets/img/CountdownFeatures_2_4.webp').default,
                     ] 
                 },
                 {
@@ -92,9 +76,9 @@ const Content = {
                     text: <p>Web-dev, live prototypes, and even C code for embedded systems.</p>,
                     visuals: [
                         require('./assets/img/CountdownFeatures_3_1.svg').default,
-                        require('./assets/img/CountdownFeatures_3_2.png').default,
-                        require('./assets/img/CountdownFeatures_3_3.png').default,
-                        require('./assets/img/CountdownFeatures_3_4.png').default,
+                        require('./assets/img/CountdownFeatures_3_2.webp').default,
+                        require('./assets/img/CountdownFeatures_3_3.webp').default,
+                        require('./assets/img/CountdownFeatures_3_4.webp').default,
                     ] 
                 },
             ]
@@ -103,7 +87,7 @@ const Content = {
             component: 'Footer',
             headshot: require('./assets/img/me.jpg').default,
             bgLayers: [
-                require('./assets/img/footer_bg_pattern.png').default,
+                // require('./assets/img/footer_bg_pattern.png').default,
                 require('./assets/img/footer_bg_shapes.svg').default,
             ],
             title: <h3>Enger Bewza: Bay area product designer</h3>,
@@ -204,7 +188,7 @@ const Content = {
             title: <h2>Delivery robots?</h2>,
             description: <p>In 2018, our design team set out to make delivery robot interactions more intuitive and enjoyable. The landscape at that point was very undefined with robots ranging from difficult to understand all the way to intimidating.</p>,
             goals: ['Friendly and approachable', 'Able to communicate intent', 'People should feel safe around it', 'Secure and hygienic', 'Recognizable, not just some robot'],
-            img: require('./assets/img/serveLoading.jpg').default
+            img: require('./assets/img/serveLoading.webp').default
         },
         {
             component: 'SplitImage',
@@ -212,7 +196,7 @@ const Content = {
                 <h3>Meet Serve</h3>, 
                 <p>After testing concepts with online surveys and cardboard models, we landed on Serve. Most people intuitively understood where the "front" was, the face, and how to interact with it.</p>
             ],
-            img: require('./assets/img/serve_progress.png').default,
+            img: require('./assets/img/serve_progress.webp').default,
             bottomColor: '#EAEBF0',
             bottomColorHeight: '33%',
         },
@@ -242,7 +226,7 @@ const Content = {
                     ],
                     content: {
                         width: '50%',
-                        img: require('./assets/img/runningSound.png').default,
+                        img: require('./assets/img/runningSound.webp').default,
                     }
                 },
                 {
@@ -252,7 +236,7 @@ const Content = {
                     ],
                     content: {
                         width: '50%',
-                        img: require('./assets/img/movement.png').default,
+                        img: require('./assets/img/movement.webp').default,
                     }
                 },
             ]
@@ -281,7 +265,7 @@ const Content = {
                 <h1>Driving Serve</h1>, 
                 <p>Autonomous vehicles sometimes need help, even more so when navigating a sidewalk with no lanes. I designed a tele-ops interface that allows our fleet of Serves to be monitored by just a couple people. Intervening if necessary.</p>
             ],
-            img: require('./assets/img/pilotUI.jpg').default,
+            img: require('./assets/img/pilotUI.webp').default,
             topTextWhite: true,
             backgroundColor: 'black',
         },
@@ -300,7 +284,7 @@ const Content = {
                     ],
                     content: {
                         width: '50%',
-                        img: require('./assets/img/cargo.png').default,
+                        img: require('./assets/img/cargo.webp').default,
                     }
                 },
                 {
@@ -310,7 +294,7 @@ const Content = {
                     ],
                     content: {
                         width: '50%',
-                        img: require('./assets/img/cmf.png').default,
+                        img: require('./assets/img/cmf.webp').default,
                     }
                 },
             ]
@@ -323,7 +307,7 @@ const Content = {
             ],
             textWidth: '500px',
             class: 'fullHeight',
-            backgroundImage: require('./assets/img/serveFooterBG.png').default,
+            backgroundImage: require('./assets/img/serveFooterBG.webp').default,
             collage: [
                 {
                     video: require('./assets/video/crossing_320.mp4').default,
@@ -332,7 +316,7 @@ const Content = {
                     left: '-100px'
                 },
                 {
-                    img: require('./assets/img/serveCostume.jpg').default,
+                    img: require('./assets/img/serveCostume.webp').default,
                     width: '130px',
                     top: '600px',
                     left: '0'
@@ -344,7 +328,7 @@ const Content = {
                     left: '100px'
                 },
                 {
-                    img: require('./assets/img/serveIntersection.jpg').default,
+                    img: require('./assets/img/serveIntersection.webp').default,
                     width: '180px',
                     top: '500px',
                     left: '300px'
@@ -362,7 +346,7 @@ const Content = {
                     right: '0'
                 },
                 {
-                    img: require('./assets/img/serveDancer.jpg').default,
+                    img: require('./assets/img/serveDancer.webp').default,
                     width: '200px',
                     top: '285px',
                     right: '200px'
@@ -423,7 +407,7 @@ const Content = {
                 <h2>Measurement app</h2>, 
                 <p>A mobile app allowing users to take their measurements, learn about their feet and purchase our customized footwear.</p>
             ],
-            img: require('./assets/img/wiivv_app_intro.png').default,
+            img: require('./assets/img/wiivv_app_intro.webp').default,
             bottomTextWhite: true,
             backgroundImage: require('./assets/img/wiivvWaveBlueGold.svg').default,
         },
@@ -445,7 +429,7 @@ const Content = {
                         {
                             content: {
                                 width: '100%',
-                                img: require('./assets/img/app1.png').default,
+                                img: require('./assets/img/app1.webp').default,
                             }
                         },
                         {
@@ -459,7 +443,7 @@ const Content = {
                             ],
                             content: {
                                 width: '40%',
-                                img: require('./assets/img/painPoints.png').default,
+                                img: require('./assets/img/painPoints.webp').default,
                             }
                         },
                     ]
@@ -482,7 +466,7 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/nonLinear.png').default,
+                                img: require('./assets/img/nonLinear.webp').default,
                             }
                         },
                         {
@@ -492,7 +476,7 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/tutorialSlider.png').default,
+                                img: require('./assets/img/tutorialSlider.webp').default,
                             }
                         },
                     ]
@@ -516,7 +500,7 @@ const Content = {
                             ],
                             content: {
                                 width: '60%',
-                                img: require('./assets/img/orderMatters.png').default,
+                                img: require('./assets/img/orderMatters.webp').default,
                             }
                         },
                         {
@@ -526,7 +510,7 @@ const Content = {
                             ],
                             content: {
                                 width: '40%',
-                                img: require('./assets/img/cvCapture.png').default,
+                                img: require('./assets/img/cvCapture.webp').default,
                             }
                         },
                     ]
@@ -538,8 +522,8 @@ const Content = {
             bottomColor: '#EAEBF0',
             bottomColorHeight: '50%',
             html: <div className={`awardsBoxMain`}>
-                <img className={`awardFG`} src={require('./assets/img/awardFG.png').default} />
-                <img className={`awardBG`} src={require('./assets/img/awardBG.png').default} />
+                <img className={`awardFG`} src={require('./assets/img/awardFG.webp').default} />
+                <img className={`awardBG`} src={require('./assets/img/awardBG.webp').default} />
                 <div className={`awardsBox`}>
                     <h3>Awards</h3> 
                     <p>In 2016, I entered my app designs into the Vancouver UX awards. I pitched at the event with a live-app demo and we ended up taking home two awards:</p>
@@ -565,8 +549,8 @@ const Content = {
                     <li>Messaging tested around clarity and credibility as well as understanding the process.</li>
                 </ul>
             ],
-            img: require('./assets/img/wiivv_website_intro.png').default,
-            overlayIMG: require('./assets/img/wiivv_website_overlay.png').default,
+            img: require('./assets/img/wiivv_website_intro.webp').default,
+            overlayIMG: require('./assets/img/wiivv_website_overlay.webp').default,
             backgroundImage: require('./assets/img/wiivvWaveGrey.svg').default,
         },
         {
@@ -584,11 +568,11 @@ const Content = {
                 cards: [
                     {
                         title: 'Custom insoles',
-                        img: require('./assets/img/cardInsole.png').default,
+                        img: require('./assets/img/cardInsole.webp').default,
                         subText: 'Insoles taylor-made to your feet and lifestyle.',
                         content: <>
                             <div className={`intro`}>
-                                <img className={`overflow`} src={require('./assets/img/hardwareInsoleMain.png').default} />
+                                <img className={`overflow`} src={require('./assets/img/hardwareInsoleMain.webp').default} />
                                 <div className={`intoText`}>
                                     <p>Our main product, a custom insole created from the measurements users took in our app.</p>
                                     <p>I designed the insoles in Blender and created the tools to easily generate 3D printable designs.</p>
@@ -600,26 +584,26 @@ const Content = {
                                 </div>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareInsole1.jpg').default} />
+                                <img src={require('./assets/img/hardwareInsole1.webp').default} />
                                 <p>Insole production and final product. Each one made unique to their users chosen design and comfort needs. Special markings were used to help the production team track orders and assembly. The end users name was also added to the top and bottom of each pair.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareInsole2.jpg').default} />
+                                <img src={require('./assets/img/hardwareInsole2.webp').default} />
                                 <p>First iteration of our insole product. This iteration helped us validate and start to understand what users preferred when it came to comfort. From this design, we decided that the heel cup was too high and that the forefoot did not need to be printed in nylon.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareInsole3.jpg').default} />
+                                <img src={require('./assets/img/hardwareInsole3.webp').default} />
                                 <p>Tommy Europe, Linda Wong and Martha McCabe were amongst the first 100 users ranging from Canadian Olympic athletes, stunt actors, to everyday casual-users in a clinical trial to quantify comfort.</p>
                             </div>
                         </>
                     },
                     {
                         title: 'Custom sandals',
-                        img: require('./assets/img/cardSandal.png').default,
+                        img: require('./assets/img/cardSandal.webp').default,
                         subText: 'The most comfortable sandals made to your feet.',
                         content: <>
                             <div className={`intro`}>
-                                <img className={`overflow`} src={require('./assets/img/hardwareSandalMain.png').default} />
+                                <img className={`overflow`} src={require('./assets/img/hardwareSandalMain.webp').default} />
                                 <div className={`intoText`}>
                                     <p>The most comfortable sandal, made to you!</p>
                                     <p>My main challenge was to figure out how to get a 3D printed arch to reliably fit into the product while still looking good and offering the same level of comfort for each user. </p>
@@ -630,31 +614,31 @@ const Content = {
                                 </div>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareSandal1.jpg').default} />
+                                <img src={require('./assets/img/hardwareSandal1.webp').default} />
                                 <p>My final design that worked best featured a lip that holds it in place, a gasket like section to seel the lip off from debris, an intentionally open cavity allowing compression and expulsion of debris and a flowing outer lip. It was the best of both worlds, functional and the most visually pleasing as well.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareSandal2.jpg').default} />
+                                <img src={require('./assets/img/hardwareSandal2.webp').default} />
                                 <p>The 2nd to final iteration was close! We realized that it made more sense to separate sandal upper into 2 parts, allowing for a softer foot-bed. This would create a cavity that the arch could be inserted into.</p>
                                 <p>Although this was the closest, I learned that the users could feel the hard lip at the very edge pressing into their foot. This was made worse because the arch could not compress due to the side waterfall, necessary to keep it sealed from debris.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareSandal3.jpg').default} />
+                                <img src={require('./assets/img/hardwareSandal3.webp').default} />
                                 <p>We took out the extensions and created only an arch insert this time. My best attempt was to secure it with mushroom like pegs into corresponding holes. This iteration was still not comfortable for users, the hard plastic under the foot could never be comfortable and the method i had chosen to secure the insert would pop out due to flex, no matter how much glue was used.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwareSandal4.jpg').default} />
+                                <img src={require('./assets/img/hardwareSandal4.webp').default} />
                                 <p>Our first thinking was to have the 3D printed part to be much larger, holding a tow thong and to be exposed on the top. This required too much thickness in teh foot-bed, and provided no flexibility.</p>
                             </div>
                         </>
                     },
                     {
                         title: 'Packaging',
-                        img: require('./assets/img/cardPackaging.png').default,
+                        img: require('./assets/img/cardPackaging.webp').default,
                         subText: 'Sustainable and functional packaging.',
                         content: <>
                             <div className={`intro`}>
-                                <img className={``} src={require('./assets/img/hardwarePackagingMain.png').default} />
+                                <img className={``} src={require('./assets/img/hardwarePackagingMain.webp').default} />
                                 <div className={`intoText`}>
                                     <p>Like with other D2C products that primarily sell online and through apps (Casper, Tushy, Care/of, BOTM, etc), we had to have a good out-of-box experience. The main challenge was that the product was always a unique shape.</p>
                                     <ul>
@@ -665,12 +649,12 @@ const Content = {
                                 </div>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwarePackaging1.jpg').default} />
+                                <img src={require('./assets/img/hardwarePackaging1.webp').default} />
                                 <p>Previous iteration of packaging. Was informative and met many legal requirements where we were to ship our products too. A card had unique printing of the users name, and each one was signed with a promise of quality assurance.</p>
                                 <p>The only issue with this design was that it was wasteful. We could not ship the box, it needed to go into an additional “shipper” much like how you would receive goods form Amazon. And each one needed to be assembled and stored on the manufacturing store with many parts. Our final iteration after that was a simple biodegradable resealable pouch that could be directly shipped as well, saving valuable production resources, space while being more sustainable.</p>
                             </div>
                             <div className={`imageSection`}>
-                                <img src={require('./assets/img/hardwarePackaging2.jpg').default} />
+                                <img src={require('./assets/img/hardwarePackaging2.webp').default} />
                                 <p>The first iteration of our packaging. We only had a 3/4 length insole product at that time. This box was used to ship out all of our Kickstarter orders, features a printed sticker with the users name and the details of the order, as well as a helpful wearing-and-caring tri-fold. The design was fun, but a bit too quirky and the box needed to be more simple and ridged to survive shipping.</p>
                             </div>
                         </>

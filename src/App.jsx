@@ -1,9 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ReactGA from 'react-ga'
 import Content from './Content'
 import Components from './components/Components'
 import Page from './components/page'
+import TheNet from './components/TheNet'
 
 
 export default () => {
@@ -12,13 +13,6 @@ export default () => {
         ReactGA.set({ page: location.pathname })
         ReactGA.pageview(location.pathname)
     }
-
-    // Preload some important images
-    useEffect(() => {
-        Content.preLoad.forEach((picture) => {
-            new Image().src = picture.fileName
-        })
-    }, [])
 
     return (
         <Router>
@@ -32,6 +26,9 @@ export default () => {
                         </Route>
                     }
                 })}
+                <Route path='/the-net'>
+                    <TheNet />
+                </Route>
                 <Route path='/'>
                     <Page analytics={analytics} page={'home'}>
                         {Content.home.map((block, indexKey) => Components(block, indexKey))}
