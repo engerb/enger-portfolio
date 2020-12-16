@@ -2,7 +2,7 @@
   "name": "enger-portfolio",
   "version": "1.0.0",
   "description": "Enger's portfolio",
-  "homepage": "https://github.com/engerb/enger-portfolio#readme",
+  "homepage": "https://engerb.github.io/enger-portfolio",
   "private": true,
   "scripts": {
     "start-dev": "webpack serve --mode development --env development --history-api-fallback --open --hot",
@@ -10,7 +10,7 @@
     "start": "node server.js",
     "postinstall": "npm install express serve-static path",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
