@@ -12,6 +12,13 @@ export default (props) => {
         const img = new Image()
         img.src = props.src
         img.onload = () => setSourceLoaded(props.src)
+
+        return () => {
+            if ( !img ) {
+                return
+            }
+            img.onload = function(){}
+        }
     }, [props.src])
 
     // expanding image props, optional hires src

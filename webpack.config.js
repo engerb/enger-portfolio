@@ -94,6 +94,8 @@ module.exports = {
             patterns: [
                 { from: 'CNAME', to: '' },
                 { from: 'src/.htaccess', to: '' },
+                { from: 'src/.nojekyll', to: '' },
+                { from: 'src/404.html', to: '' },
             ],
         }),
     ]

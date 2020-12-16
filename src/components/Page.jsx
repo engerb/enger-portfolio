@@ -31,6 +31,15 @@ export default (props) => {
     useEffect(() => {
         props.analytics(window.location)
 
+        // fix for github hosting
+        if (window.location.hash) {
+            const newPath = window.location.hash.replace('#', '')
+            history.push(newPath)
+        } else if (window.location.search) {
+            const newPath = window.location.search.replace('?', '')
+            history.push(newPath)
+        }
+
         if (props.page === 'home') {
             window.scrollTo(0, homePageScrollY ? homePageScrollY : 0)
         } else {
