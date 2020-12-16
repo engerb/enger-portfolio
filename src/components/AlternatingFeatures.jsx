@@ -13,7 +13,7 @@ export default (props) => {
                             {feature.mask && <feature.mask maskID={'mask' + indexKey} key={'mask' + indexKey} />}
                             <div className={`shadow`} style={feature.mask && {clipPath: 'url(#mask' + indexKey + ')'}} />
                             {feature.demo.img &&
-                                <div className={`img`} style={Object.assign({backgroundImage: 'url(' + feature.demo.img + ')'}, feature.mask && {clipPath: 'url(#mask' + indexKey + ')'})}>
+                                <div className={`img`} style={Object.assign({backgroundImage: 'url(' + feature.demo.img + ')'}, feature.mask ? {clipPath: 'url(#mask' + indexKey + ')'} : '')}>
                                     {feature.demo.video && <div></div>}
                                 </div>
                             }

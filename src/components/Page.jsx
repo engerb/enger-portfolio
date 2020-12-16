@@ -40,6 +40,8 @@ export default (props) => {
             history.push(newPath)
         }
 
+        console.clear()
+
         if (props.page === 'home') {
             window.scrollTo(0, homePageScrollY ? homePageScrollY : 0)
         } else {

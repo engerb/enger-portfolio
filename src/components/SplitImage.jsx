@@ -25,7 +25,7 @@ import './SplitImage.scss'
 export default (props) => {
     return (
         <section id={`${props.id ? props.id : ''}`} 
-            style={Object.assign(props.backgroundImage && {backgroundImage: `url('${props.backgroundImage}')`}, {backgroundColor: props.backgroundColor ? props.backgroundColor : ''})} 
+            style={Object.assign(props.backgroundImage ? {backgroundImage: `url('${props.backgroundImage}')`} : '', {backgroundColor: props.backgroundColor ? props.backgroundColor : ''})} 
             className={`${props.className} ${props.class ? props.class : ''}`}>
             {props.topColor &&
                 <div className={`topColor`} style={{backgroundColor: props.topColor, height: props.topColorHeight}}/>
