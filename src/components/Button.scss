@@ -1,0 +1,87 @@
+.Button {
+    width: max-content;
+    cursor: pointer;
+
+    .buttonContent {
+        padding: 22px 35px 12px 35px;
+        display: flex;
+        position: relative;
+
+        &.reverse {
+            flex-direction: row-reverse;
+
+            svg {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
+        h6 {
+            margin-bottom: 10px;
+        }
+
+        svg {
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+
+        .overflowRight {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            right: -20px;
+            bottom: -25px;
+        }
+    }
+
+    &.textLink {
+        div {
+            padding-left: 0;
+        }
+
+        &.black {
+            background-color: unset;
+            color: black;
+    
+            svg {
+                path {
+                    stroke: black;
+                }
+            }
+        }
+
+        &.blue {
+            background-color: unset;
+            color: #0C6BED;
+    
+            svg {
+                path {
+                    stroke: #0C6BED;
+                }
+            }
+        }
+    }
+
+    &.black {
+        background-color: black;
+        color: white;
+
+        svg {
+            // ... color
+        }
+    }
+
+    &.white {
+        background-color: white;
+        color: black;
+
+        svg {
+            path {
+                stroke: black;
+            }
+        }
+    }
+}

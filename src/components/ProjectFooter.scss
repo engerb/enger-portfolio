@@ -1,0 +1,58 @@
+@import '../_variables';
+
+.ProjectFooter {
+    position: relative;
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    &.fullHeight {
+        max-height: 1200px;
+        height: 100vh;
+        overflow: hidden;
+
+        @media only screen and (max-width: 950px) {    
+            height: auto;
+        }
+    }
+
+    .text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        text-align: center;
+        position: relative;
+
+        p {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 45px;
+        }
+    }
+
+    .Button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .collage {
+        height: calc(100% - 200px);
+        width: calc(100% - 40px);
+        max-width: 1100px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 100px;
+
+        @media only screen and (max-width: 950px) {    
+            display: none;
+        }
+
+        video, img {
+            position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

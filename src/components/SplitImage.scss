@@ -1,0 +1,223 @@
+@import '../_variables';
+
+.SplitImage {
+    position: relative;
+    background-size: 101% 101%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+    // overflow-x: hidden;
+
+    @media only screen and (max-width: 1400px) {    
+        background-size: auto;
+        background-position: center center;
+
+        &.backgroundTop {
+            background-position: top center;
+        }
+
+        &.backgroundBottom {
+            background-position: bottom center;
+        }
+    }
+
+    &.noPaddingTop {
+        .mainPadding {
+            padding-top: 0;
+        }
+    }
+
+    &.noPaddingBottom {
+        .mainPadding {
+            padding-bottom: 0;
+        }
+    }
+
+    .topColor, 
+    .bottomColor {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bottomColor {
+        bottom: 0;
+        top: unset;
+    }
+
+    &.centerText {
+        div {
+            .text {
+                text-align: center;
+            }
+        }
+    }
+
+    &.textWide {
+        div {
+            .text {
+                max-width: 900px;
+            }
+        }
+    }
+    
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        .text {
+            max-width: 700px;
+            position: relative;
+
+            * {
+                // width: 100%;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 45px;
+                color: #525252;
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    font-size: 24px;
+                    line-height: 45px;
+                    color: #525252;
+                }
+            }
+
+            &.white {
+                * {
+                    color: white;
+                }
+            }
+
+            &.top {
+                margin-bottom: 50px;
+            }
+
+            &.bottom {
+                margin-top: 50px;
+            }
+        }
+
+        .mainImage {
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .overlayImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    &.wiivvWebsiteOverlay {
+        .mainImage {
+            .overlayImg {
+                transform-origin: top center;
+                animation: wiivvWebsiteOverlayAnimation 10s infinite;
+                @keyframes wiivvWebsiteOverlayAnimation {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                    5% {
+                        opacity: 1;
+                        transform: translateY(0) scaleY(1);
+                    }
+                    50% {
+                        opacity: 1;
+                        transform: translateY(0) scaleY(1);
+                    }
+                    55% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: translateY(30px) scaleY(0.70);
+                    }
+                }
+            }
+        }
+    }
+
+    .awardsBoxMain {
+        padding-top: 100px;
+        position: relative;
+        margin-bottom: 50px;
+
+        .awardBG {
+            position: absolute;
+            z-index: 99;
+            left: -300px;
+            top: -100px;
+            width: 708px;
+        }
+
+        .awardFG {
+            position: absolute;
+            z-index: 101;
+            right: -140px;
+            bottom: -140px;
+            width: 280px;
+        }
+
+        .awardsBox {
+            width: 100%;
+            max-width: 910px;
+            background-color: white;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+            padding: 75px 50px;
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            z-index: 100;
+    
+            .awards {
+                margin-top: 30px;
+                display: flex;
+                flex-flow: row;
+
+                @media only screen and (max-width: 950px) {    
+                    display: inline;
+                }
+    
+                a {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin-right: 25px;
+
+                    @media only screen and (max-width: 950px) {    
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+    
+            h2 {
+                // text-align: left;
+            }
+    
+            p {
+                // text-align: left;
+            }
+        }
+    }
+}

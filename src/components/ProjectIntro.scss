@@ -1,0 +1,91 @@
+@import '../_variables';
+
+.ProjectIntro {
+    div {
+        display: flex;
+        flex-flow: column;
+
+        @media only screen and (max-width: 950px) {    
+            display: block;
+        }
+
+        &.imgLayout {
+            flex-flow: row;
+            justify-content: space-between;
+
+            .text {
+                flex-basis: 500px;
+                position: relative;
+                flex-flow: column;
+
+                .description, 
+                .goals {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 950px) {    
+                display: block;
+            }
+            
+            .description {
+                width: 600px;
+                margin-right: 50px;
+
+                @media only screen and (max-width: 950px) {    
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 50px;
+                }
+
+                p {
+                    font-size: 24px;
+                    line-height: 45px;
+                    color: #525252;
+                }
+            }
+
+            .goals {
+                width: 400px;
+
+                @media only screen and (max-width: 950px) {    
+                    width: 100%;
+                }
+
+                // ul {
+                //     margin: 0;
+                //     list-style: none;
+                //     padding: 0;
+
+                //     li {
+                //         padding-left: 10px;
+                //         font-size: 24px;
+                //         line-height: 45px;
+                //         color: #717171;
+
+                //         &:before {
+                //             content: '•';
+                //             padding-right: 10px;
+                //             color: #717171;
+                //         }
+                //     }
+                // }
+            }
+        }
+
+        .Image {
+            flex-basis: 500px;
+
+            @media only screen and (max-width: 950px) {    
+                height: 400px;
+            }
+        }
+    }
+}

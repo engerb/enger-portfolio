@@ -1,0 +1,100 @@
+@import '../_variables';
+
+.AlternatingContent {
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 45px;
+        color: #525252;
+    }
+
+    .topText {
+        margin-bottom: 75px;
+    }
+
+    .alternatingContent {
+        
+        &.normalDir {
+            :nth-child(even) {
+                flex-direction: row-reverse;
+
+                .text {
+                    margin-left: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            :nth-child(odd) {
+                flex-direction: row;
+
+                .text {
+                    margin-right: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        
+        &.reversedDir {
+            :nth-child(even) {
+                flex-direction: row;
+
+                .text {
+                    margin-right: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            :nth-child(odd) {
+                flex-direction: row-reverse;
+
+                .text {
+                    margin-left: 50px;
+
+                    @media only screen and (max-width: 950px) {    
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .item {
+            display: flex;
+            position: relative;
+
+            @media only screen and (max-width: 950px) {    
+                display: block;
+            }
+
+            .text {
+                margin-top: 50px;
+                // min-width: 40%;
+
+                @media only screen and (max-width: 950px) {    
+                    margin-bottom: 40px;
+                }
+            }
+
+            .content {
+                // flex-basis: 100%;
+
+                img, video {
+                    width: 100%;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-top: 75px;
+            }
+        }
+    }
+}
