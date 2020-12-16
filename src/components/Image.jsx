@@ -23,7 +23,7 @@ export default (props) => {
 
     // expanding image props, optional hires src
     // optional low res
-    const placeholder = props.placeholder 
+    const placeholder = props.placeholder ? props.placeholder : props.src
     
     return (
         <>

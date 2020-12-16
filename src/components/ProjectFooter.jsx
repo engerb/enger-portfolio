@@ -24,7 +24,7 @@ import './ProjectFooter.scss'
 export default (props) => {
     return (
         <section id={`${props.id ? props.id : ''}`} 
-            style={{backgroundImage: props.backgroundImage ? `url('${props.backgroundImage}')` : '', backgroundColor: props.backgroundColor ? props.backgroundColor : ''}} 
+            style={Object.assign(props.backgroundImage && {backgroundImage: `url('${props.backgroundImage}')`}, {backgroundColor: props.backgroundColor ? props.backgroundColor : ''})} 
             className={`${props.className} ${props.class ? props.class : ''}`}>
             {props.collage &&
                 <div className={`collage`}>
