@@ -34,8 +34,8 @@ export default () => {
                         </Route>
                     }
                 })}
-                <Route path='/the-net' event={event} analytics={analytics}>
-                    <TheNet />
+                <Route path='/the-net'>
+                    <TheNet event={event} analytics={analytics} />
                 </Route>
                 <Route path='/'>
                     <Page analytics={analytics} event={event} page={'home'}>
