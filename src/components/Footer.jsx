@@ -20,7 +20,14 @@ export default (props) => {
                             <Image class={`headshot`} src={props.headshot} />
                             <div className={`links`}>
                                 {props.social.map((item, indexKey) => {
-                                    return <a key={indexKey} target='_blank' href={item.href} style={{backgroundImage: `url(${item.image})`}}></a>
+                                    return <a key={indexKey} target='_blank' href={item.href} style={{backgroundImage: `url(${item.image})`}} 
+                                    onClick={()=>{
+                                        props.event(
+                                            'Footer', // category,
+                                            'socialLink', // action,
+                                            item.alt, // label
+                                        )
+                                    }}></a>
                                 })}
                             </div>
                         </div>
@@ -35,7 +42,7 @@ export default (props) => {
                         </div>
                         <div className={`buttons`}>
                             {props.buttons.map((item, indexKey) => {
-                                return <Button key={indexKey} {...item} />
+                                return <Button event={props.event} key={indexKey} {...item} />
                             })}
                         </div>
                     </div>

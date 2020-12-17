@@ -14,24 +14,32 @@ export default () => {
         ReactGA.pageview(location.pathname)
     }
 
+    const event = (category, action, label) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+            label: label
+        })
+    }
+
     return (
         <Router>
             <Switch>
                 {Object.keys(Content).map((key, i) => {
                     if (key !== 'home') {
                         return  <Route key={key} path={`/${key}`}>
-                            <Page analytics={analytics} page={key}>
-                                {Content[key].map((block, indexKey) => Components(block, indexKey))}
+                            <Page analytics={analytics} event={event} page={key}>
+                                {Content[key].map((block, indexKey) => Components(block, indexKey, event))}
                             </Page>
                         </Route>
                     }
                 })}
-                <Route path='/the-net'>
+                <Route path='/the-net' event={event} analytics={analytics}>
                     <TheNet />
                 </Route>
                 <Route path='/'>
-                    <Page analytics={analytics} page={'home'}>
-                        {Content.home.map((block, indexKey) => Components(block, indexKey))}
+                    <Page analytics={analytics} event={event} page={'home'}>
+                        {Content.home.map((block, indexKey) => Components(block, indexKey, event))}
                     </Page>
                 </Route>
             </Switch>

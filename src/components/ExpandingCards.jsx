@@ -105,7 +105,14 @@ export default (props) => {
                                 <p>{card.subText}</p>
                             }
                             {card.content &&
-                                <div className={`button`} onClick={()=>{openFixedModal(card)}}>
+                                <div className={`button`} onClick={()=>{
+                                    openFixedModal(card)
+                                    props.event(
+                                        'ExpandingCards', // category,
+                                        'open', // action,
+                                        card.title, // label
+                                    )
+                                    }}>
                                     <ExpandIcon />
                                     <h6>{card.buttonTitle ? card.buttonTitle : 'Show summery'}</h6>
                                 </div>

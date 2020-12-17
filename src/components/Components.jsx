@@ -25,11 +25,12 @@ const Components = {
     AlternatingFeatures,
 }
 
-export default (item, indexKey) => {   
+export default (item, indexKey, event) => {   
     if (typeof Components[item.component] !== 'undefined') {
         return React.createElement(Components[item.component], {
             key: (item.key ? item.key : indexKey),
             className: item.component,
+            event: event,
             ...item
         })
     } else {

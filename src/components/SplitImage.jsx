@@ -56,7 +56,7 @@ export default (props) => {
                     props.html
                 }
                 {props.subComponent &&
-                    Components(props.subComponent)
+                    Components(props.subComponent, 0, props.event)
                 }
                 {props.bottomText &&
                     <div className={`text bottom ${props.bottomTextWhite && 'white'}`}>

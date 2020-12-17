@@ -23,8 +23,21 @@ export default (props) => {
     }
 
     const checkIfCanEnterTheNet = () => {
+        console.clear()
         if (ctrlShift) {
+            props.event(
+                'TheNet', // category,
+                'enterAttempt', // action,
+                'accepted', // label
+            )
             history.push('/the-net')
+        } else {
+            console.log('Praetorians: "You have not used the correct key combination required to enter The-Net"')
+            props.event(
+                'TheNet', // category,
+                'enterAttempt', // action,
+                'denied', // label
+            )
         }
     }
 
@@ -62,7 +75,7 @@ export default (props) => {
     return (
         <>
             {copyModal.open &&
-                <CopyModal />
+                <CopyModal event={props.event} />
             }
             <div className={`pi ${props.page}`} onClick={checkIfCanEnterTheNet}>
                 <Pi />

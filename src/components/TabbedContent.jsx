@@ -53,7 +53,14 @@ export default (props) => {
                         return <div key={i} 
                             className={`navItem ${(selectedItem && item.TabbedContentConfig.title === selectedItem.TabbedContentConfig.title) && 'selected'} ${props.indicator ? props.indicator : 'tick'}`} 
                             style={{color: `${props.textColor ? props.textColor : 'white'}`, backgroundColor: `${props.backgroundColor ? props.backgroundColor : 'black'}`}}
-                            onClick={()=>{selectItem(item.TabbedContentConfig.title)}}>
+                            onClick={()=>{
+                                selectItem(item.TabbedContentConfig.title)
+                                props.event(
+                                    'TabbedContent', // category,
+                                    'select', // action,
+                                    item.TabbedContentConfig.title, // label
+                                )
+                            }}>
                             <h3>{item.TabbedContentConfig.title}</h3>
                         </div>
                     })}

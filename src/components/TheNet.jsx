@@ -9,6 +9,8 @@ import './TheNet.scss'
 
 export default (props) => {
     useEffect(() => {
+        props.analytics(window.location)
+        
         const audioEl = document.getElementsByClassName('audio-element')[0]
         audioEl.play()
     }, [])

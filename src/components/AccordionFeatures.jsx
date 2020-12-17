@@ -21,7 +21,15 @@ export default (props) => {
                         {props.title}
                         <div className={`textSlider`}>
                             {props.features.map((item, i) => {
-                                return <div key={i} className={`sliderItem ${i === contentIndex ? 'active' : ''}`} onClick={() => {setContentIndex(i)}}>
+                                return <div key={i} className={`sliderItem ${i === contentIndex ? 'active' : ''}`} 
+                                    onClick={() => {
+                                        setContentIndex(i)
+                                        props.event(
+                                            'AccordionFeatures', // category,
+                                            'select', // action,
+                                            item.title.props.children, // label
+                                        )
+                                    }}>
                                     <div className={`sliderToggle`}>
                                         <CountDownBG className={`BG`} />
                                         <CountDownOutline className={`Outline`} />

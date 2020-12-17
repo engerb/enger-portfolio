@@ -56,7 +56,14 @@ export default (props) => {
                             <p>
                             {(()=>{
                                 return props.stats.contributions.links.map((item, key) => {
-                                    return <span key={key} onClick={()=>{scrollToSection(item.link)}}>{item.title}</span>
+                                    return <span key={key} onClick={()=>{
+                                        scrollToSection(item.link)
+                                        props.event(
+                                            'ProjectHeader', // category,
+                                            'scrollToSection', // action,
+                                            (props.class ? props.class : '') + ': ' + item.title, // label
+                                        )
+                                    }}>{item.title}</span>
                                 })
                             })()}
                             </p>

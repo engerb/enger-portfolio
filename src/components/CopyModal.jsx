@@ -17,6 +17,12 @@ export default (props) => {
     const textAreaRef = useRef(null)
 
     const copyToClipboard = (e) => {
+        props.event(
+            'CopyModal', // category,
+            'copyButton', // action,
+            'email', // label
+        )
+
         e.stopPropagation()
         textAreaRef.current.select()
         document.execCommand('copy')

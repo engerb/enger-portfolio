@@ -10,6 +10,14 @@ export default (props) => {
 
     const history = useHistory()
     const action = () => {
+        if (props.event) {
+            props.event(
+                'Button', // category,
+                props.action ? props.action : 'linkInternal', // action,
+                props.text, // label
+            )
+        }
+
         if (props.action === 'scrollTo') {
             const elem = document.getElementById(props.href);
 
